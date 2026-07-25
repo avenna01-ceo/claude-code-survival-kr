@@ -1,182 +1,195 @@
-# AI한테 코딩 시킬 때 안 부서지게 하는 것들
+# Stop Your AI From Breaking Working Code
 
-> 개발 안 해본 사람이 클로드 코드·커서로 만들다가 **3주차에 무너지는 걸 막는** 문장 모음입니다.
-> 전부 복붙해서 바로 쓰는 것들이고, 설명은 최소로 줄였습니다.
+> Rules and prompts that keep Claude Code, Cursor, and Codex from wrecking things that already worked.
+> Everything here is copy-paste. Explanations kept to a minimum.
 
-처음 2주는 마법 같습니다. 문제는 코드가 커지고 나서입니다.
-AI가 전체를 한 번에 못 보게 되면 **A를 고치면서 B를 부수기** 시작합니다.
-실력 문제가 아니라 구조 문제라서, 요령이 아니라 규칙으로 막아야 합니다.
+**[한국어 →](README.ko.md)**
+
+The first two weeks feel like magic. Then the codebase grows past what the model
+can hold at once, and it starts **fixing A while breaking B.**
+
+That isn't a skill problem. It's a structure problem — which means prompting
+harder won't fix it. Constraints will.
 
 ---
 
-## 1. 오늘 밤에 바로 할 것 하나
+## The one thing to do tonight
 
-작업 폴더에 `CLAUDE.md` 파일을 만들고 아래를 붙여넣으세요.
-클로드 코드는 대화를 시작할 때마다 이 파일을 **알아서 읽습니다.**
-(커서는 `.cursorrules`, 코덱스 계열은 `AGENTS.md`에 같은 내용을 넣으면 됩니다.)
+Create `CLAUDE.md` in your project root and paste this.
+Claude Code reads it automatically at the start of every conversation.
+
+*(Cursor → `.cursorrules`, Codex/Copilot → `AGENTS.md`. Same content.)*
 
 ```markdown
-# 프로젝트
+# Project
 
-## 무엇을 만드는가
-[한 문장]
+## What this is
+[one sentence]
 
-## 지금 상태
-[어디까지 됐고, 뭐가 아직 안 됐는지]
+## Current state
+[what works, what doesn't yet]
 
-## 건드리지 마라
-- [파일/폴더] — [이유]
+## Do not touch
+- [file/folder] — [why]
 
-## 작업 규칙
-- 지시한 파일 외에는 수정하지 마라
-- 동작하는 코드를 이유 없이 리팩토링하지 마라
-- 불확실하면 "모르겠다"고 말해라. 추측을 사실처럼 쓰지 마라
-- 검증 안 된 결과를 완료라고 보고하지 마라
+## Rules
+- Do not modify files I did not ask you to modify
+- Do not refactor working code without being asked
+- If unsure, say "I don't know". Never present a guess as fact
+- Never report something as done without verifying it
 ```
 
-### 왜 "하지 마라"로 쓰나
+### Why "do not" instead of "please do"
 
-`좋은 코드를 작성해주세요` 같은 문장은 아무 효과가 없습니다.
-'좋은'의 기준이 없으니 행동이 안 바뀝니다.
+`Please write clean code` does nothing. There's no threshold for *clean*,
+so no behavior changes.
 
-**금지는 기준이 명확해서 바로 먹힙니다.**
+**Prohibitions have a clear edge. They land immediately.**
 
-| ❌ 효과 없음 | ⭕ 바로 먹힘 |
+| ❌ No effect | ⭕ Works |
 |---|---|
-| 깔끔하게 짜줘 | 지시한 파일 외에는 수정하지 마라 |
-| 신중하게 해줘 | 테스트 없이 병합하지 마라 |
-| 잘 정리해줘 | legacy/ 폴더는 수정하지 마라 |
+| Write clean code | Do not modify files I didn't ask about |
+| Be careful | Do not merge without tests |
+| Keep it organized | Do not touch `legacy/` |
 
 ---
 
-## 2. 안 부서지게 하는 문장 5개
+## 5 prompts that prevent breakage
 
-### ① 고치라고 하기 전에
+### 1. Before letting it change anything
 ```
-바로 코드 쓰지 말고,
-어떤 파일을 건드릴 건지랑 위험한 지점이 어딘지 먼저 알려줘.
+Don't write code yet. First tell me which files you'd touch
+and where the risky parts are.
 ```
-`고쳐줘`로 시작하면 AI가 **뭘 건드리는지 본인도 모르는 채로** 손댑니다.
-계획을 먼저 받으면 엉뚱한 데 손대는 게 확 줄어듭니다.
+Starting with *"fix it"* means the model edits things **it can't itself account for.**
+Getting the plan first kills most collateral damage.
 
-### ② 부술까 무서울 때
+### 2. When you're scared it'll break something
 ```
-이거 고치면 같이 영향받는 게 뭐가 있는지부터 알려줘.
+Before changing this, tell me what else is affected by it.
 ```
-혼내는 것보다 이게 낫습니다. 본인이 먼저 "아 이게 저기 묶여 있네요" 하고 실토합니다.
+Works better than scolding. It ends up confessing:
+*"ah, this is coupled to the character class."*
 
-### ③ "완료했습니다"를 받았을 때
+### 3. When you get "Done!"
 ```
-됐는지 봐달라는 게 아니라, 테스트를 짜서 통과하는 걸 보여줘.
+Don't tell me it works. Write a test and show me it passes.
 ```
-AI는 **자기가 만든 결과물의 오류를 잘 못 봅니다.**
-만들 때 쓴 전제로 검사하니까, 전제가 틀렸으면 둘 다 틀립니다.
-"됐나요?"는 의견이고 "테스트 통과"는 증거입니다.
+Models are **bad at catching their own errors.** They review with the same
+assumptions they built with — so a wrong assumption survives both passes.
+"Looks good" is an opinion. A passing test is evidence.
 
-### ④ 대화창을 갈아타기 전에
+### 4. Before starting a fresh chat
 ```
-지금까지 한 것 / 다음에 할 것 / 폐기한 방향을 정리해줘.
-다음 창이 이것만 보고 이어서 할 수 있게.
+Summarize: what's done / what's next / what we tried and abandoned.
+Write it so a fresh session can continue from that alone.
 ```
-**"폐기한 방향"이 핵심입니다.** 이게 없으면 새 창이 방금 실패한 방법을 또 제안합니다.
+**"What we abandoned" is the important part.** Without it, the new session
+confidently proposes the exact approach that just failed.
 
-### ⑤ 규칙 파일에 넣을 한 줄
+### 5. The line for your rules file
 ```
-지시한 파일 외에는 수정하지 마라.
+Do not modify files I did not ask you to modify.
 ```
-가장 많이 쓰이고 가장 많이 막아줍니다.
+Single highest-value line in the file.
 
 ---
 
-## 3. 대화창은 상합니다
+## Context rots
 
-같은 창에서 오래 작업하면 답이 점점 이상해집니다. 착각이 아닙니다.
+Long sessions get worse, and it isn't your imagination.
 
-대화가 길어지면 **이미 접은 방향, 중간에 틀렸던 시도**가 전부
-"지금도 유효한 정보"로 취급됩니다. 그래서 흐려집니다.
+As the conversation grows, **abandoned directions and corrected mistakes**
+all keep counting as current context. The signal gets buried in its own history.
 
-**작업 3~5개마다 새 창을 여세요.** 끄기 전에 ④번만 시켜놓고요.
+**Start a fresh session every 3–5 tasks.** Run prompt #4 before you close.
 
-### 화가 날 때가 신호입니다
-같은 요청을 **세 번째** 하고 있다면, 요청을 바꾸지 말고 **창을 바꾸세요.**
-그 시점의 창은 이미 답을 못 내는 상태입니다. 더 시켜봤자 화만 커집니다.
+### Anger is the signal
 
----
-
-## 4. 되돌릴 수 있게 만들기
-
-git이 어렵게 느껴지면 명령어를 외울 필요 없습니다. AI한테 이렇게만 하세요.
-
-```
-작업 시작 전:  지금 상태 저장해줘
-망했을 때:    아까 저장한 데로 되돌려줘
-```
-
-저장 안 하고 게임하는 사람은 없습니다. 코드도 같습니다.
+If you're asking for the same thing a **third** time, stop rewording the request
+and **change the window.** That session can no longer produce the answer.
+Pushing harder only raises your blood pressure.
 
 ---
 
-## 5. 사고 막는 기준 하나
+## Make everything reversible
 
-> **잘못돼도 Ctrl+Z 되나?**
+If git feels like a wall, you don't need the commands. Just say:
 
-| 그냥 맡겨도 되는 것 | 반드시 확인받을 것 |
+```
+Before starting:   save the current state
+When it breaks:    restore the state you saved
+```
+
+Nobody plays a game without saving. Same rule.
+
+---
+
+## One rule for permissions
+
+> **Can Ctrl+Z undo this?**
+
+| Just let it run | Always confirm first |
 |---|---|
-| 파일 읽기·검색·분석 | 삭제 |
-| 로컬 코드 수정 (저장해뒀다면) | 배포 |
-| 초안 작성 | 메일·메시지 발송 |
-| 테스트 실행 | 결제·주문 |
+| Reading, searching, analyzing | Deleting |
+| Local edits (if you saved state) | Deploying |
+| Drafting | Sending email / messages |
+| Running tests | Payments, orders |
 
-전부 주거나 전부 뺏거나 하는 게 제일 나쁩니다.
+All-or-nothing is the worst setting. Gate the irreversible, free the rest.
 
-### 킬스위치
-규칙 파일에 이 한 줄을 넣어두세요.
+### Kill switch
+
+Put this in your rules file:
 
 ```
-폴더에 STOP.txt 파일이 있으면 모든 작업을 즉시 중단한다.
+If a file named STOP.txt exists in this folder, halt all work immediately.
 ```
 
-파일 하나 만드는 걸로 전부 멈춥니다. 이게 있으면 마음 놓고 돌립니다.
+One file stops everything. With it you can leave things running. Without it you can't.
 
 ---
 
-## 6. 실패는 데이터입니다
+## Failures are training data
 
-AI가 틀릴 때마다 **그 문장을 규칙 파일에 한 줄씩 적어두세요.**
+Every time the model gets something wrong, **append that sentence to your rules file.**
 
-규칙을 미리 상상해서 쓰면 대부분 쓸모없습니다.
-**실제로 깨진 걸 적어야 쓸모가 생깁니다.**
+Rules you imagine in advance are mostly useless.
+**Rules extracted from actual breakage are the ones that hold.**
 
 ```markdown
-## 알려진 함정
-- order_service.py의 재고 차감은 트랜잭션 밖에 있다. 알고 있고 지금은 둔다
-- test_payment.py는 실제 API를 친다. 함부로 돌리지 마라
-- 이벤트 방식으로 가려다 접었다. 다시 제안하지 마라
+## Known traps
+- Stock deduction in order_service.py sits outside the transaction. Known, leaving it
+- test_payment.py hits the live API. Don't run it casually
+- We tried the event-driven approach and dropped it. Do not propose it again
 ```
 
-이게 쌓이면 AI가 같은 실수를 두 번 안 합니다.
+Do this for a week and it stops repeating itself.
 
 ---
 
-## 정리
+## Summary
 
-- 설명은 파일로 남긴다 (`CLAUDE.md`)
-- 코드 쓰기 전에 계획을 먼저 받는다
-- 되돌릴 수 있게 저장해둔다
-- 검사는 만든 쪽이 하지 않는다
-- 돌이킬 수 없는 것만 막는다
-- "완료"는 증거로 확인한다
+- Keep the explanation in a file (`CLAUDE.md`)
+- Get the plan before the code
+- Save state so you can roll back
+- Whoever built it doesn't get to grade it
+- Gate only what's irreversible
+- "Done" means evidence, not a claim
 
-한꺼번에 다 하려 하지 마세요. **오늘 `CLAUDE.md` 한 장만 쓰세요.**
+Don't try to adopt all of it. **Write the `CLAUDE.md` tonight.** That one file
+changes tomorrow.
 
 ---
 
-## 막히셨으면
+## Contributing
 
-- 질문 올리는 곳 → https://avenna01-ceo.github.io/makhyeoss/
-- 카톡으로 물어보기 → https://open.kakao.com/o/sZ0shHFi
-- 스레드 → [@k_aria26](https://www.threads.com/@k_aria26)
+If you have a line that actually works for you, open a PR or an issue.
+Real ones only — rules that survived contact with a real codebase.
 
-돈 안 받습니다. 풀 수 있으면 풀고, 못 풀면 못 푼다고 말씀드립니다.
+## Stuck right now?
 
-기여 환영합니다. 본인이 쓰는 문장이 있으면 PR이나 이슈로 남겨주세요.
+- Ask a question → https://avenna01-ceo.github.io/makhyeoss/
+- Threads (KR) → [@k_aria26](https://www.threads.com/@k_aria26)
+
+Free. If I can solve it I will; if I can't I'll say so.
