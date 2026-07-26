@@ -1,0 +1,17 @@
+# 여기 적은 건 AI가 못 건드립니다. 한 줄에 하나.
+# 파일명만 적으면 어느 폴더에 있든 막힙니다.
+
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+
+# 폴더 통째로 막기
+migrations/**
+legacy/**
+
+# 가드 자신을 못 끄게
+.claude/guard.py
+.claude/protected.txt
+.claude/settings.json

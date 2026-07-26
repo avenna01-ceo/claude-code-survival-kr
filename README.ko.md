@@ -118,6 +118,22 @@ git이 어렵게 느껴지면 명령어를 외울 필요 없습니다. AI한테 
 
 ---
 
+## 중요한 파일은 아예 못 건드리게
+
+`CLAUDE.md`는 권고입니다. 대화가 길어지면 우선순위에서 밀리고, 결국 건드립니다.
+
+**[guard/](guard/) 는 훅입니다. 도구가 실행되기 전에 거부합니다.**
+
+```
+Blocked by guard.py: .env
+It matches the pattern '.env' listed in .claude/protected.txt.
+```
+
+설치 2분, 의존성 없음. 설득당하지 않습니다.
+`.claude/protected.txt`에 건드리면 안 되는 것만 적어두면 끝입니다.
+
+---
+
 ## 5. 사고 막는 기준 하나
 
 > **잘못돼도 Ctrl+Z 되나?**

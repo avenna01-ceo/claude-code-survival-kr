@@ -95,6 +95,22 @@ Single highest-value line in the file.
 
 ---
 
+## Make the important files untouchable
+
+`CLAUDE.md` is advice. Long conversation, priority drops, it edits the file anyway.
+
+**[guard/](guard/) is a hook. It runs before the tool call and refuses it.**
+
+```
+Blocked by guard.py: .env
+It matches the pattern '.env' listed in .claude/protected.txt.
+```
+
+Two minutes to install, no dependencies, and it can't be talked out of it.
+List what must never be touched in `.claude/protected.txt` and stop worrying about it.
+
+---
+
 ## Context rots
 
 Long sessions get worse, and it isn't your imagination.
