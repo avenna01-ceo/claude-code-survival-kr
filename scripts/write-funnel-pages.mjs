@@ -1,20 +1,28 @@
-<!doctype html>
+import { writeFileSync } from "node:fs";
+
+const site = "https://avenna01-ceo.github.io/claude-code-survival-kr";
+const gumroad = "https://gaiinmaster.gumroad.com/l/ai-automation-0won-escape-kit";
+const paypal = "https://www.paypal.com/ncp/payment/L4XKCQNYXKZDE";
+const video = `${site}/promo-assets/ai-automation-0won-short.mp4`;
+const thumb = `${site}/promo-assets/thumbnail.png`;
+
+const head = ({ title, description, canonical }) => `<!doctype html>
 <html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI 자동화 0원 탈출 키트 | 툴값만 나가고 입금은 0원일 때</title>
-  <meta name="description" content="Claude Code 100/100%, Codex 주간 한도 대기, 오늘 입금 0원. AI 자동화 초보자가 $29로 첫 유료 제안을 검증하는 실행 키트.">
-  <link rel="canonical" href="https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-0won-escape-kit.html">
+  <title>${title}</title>
+  <meta name="description" content="${description}">
+  <link rel="canonical" href="${canonical}">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="AI 자동화 0원 탈출 키트 | 툴값만 나가고 입금은 0원일 때">
-  <meta property="og:description" content="Claude Code 100/100%, Codex 주간 한도 대기, 오늘 입금 0원. AI 자동화 초보자가 $29로 첫 유료 제안을 검증하는 실행 키트.">
-  <meta property="og:url" content="https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-0won-escape-kit.html">
-  <meta property="og:image" content="https://avenna01-ceo.github.io/claude-code-survival-kr/promo-assets/thumbnail.png">
+  <meta property="og:title" content="${title}">
+  <meta property="og:description" content="${description}">
+  <meta property="og:url" content="${canonical}">
+  <meta property="og:image" content="${thumb}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AI 자동화 0원 탈출 키트 | 툴값만 나가고 입금은 0원일 때">
-  <meta name="twitter:description" content="Claude Code 100/100%, Codex 주간 한도 대기, 오늘 입금 0원. AI 자동화 초보자가 $29로 첫 유료 제안을 검증하는 실행 키트.">
-  <meta name="twitter:image" content="https://avenna01-ceo.github.io/claude-code-survival-kr/promo-assets/thumbnail.png">
+  <meta name="twitter:title" content="${title}">
+  <meta name="twitter:description" content="${description}">
+  <meta name="twitter:image" content="${thumb}">
   <style>
     :root {
       color-scheme: light;
@@ -184,11 +192,24 @@
     }
   </style>
 </head>
-<body>
+<body>`;
+
+const foot = `  <footer class="wrap">
+    수익 보장 없음. 맞춤 대행 없음. 구매자가 직접 실행하는 디지털 키트입니다.
+  </footer>
+</body>
+</html>
+`;
+
+const landing = `${head({
+  title: "AI 자동화 0원 탈출 키트 | 툴값만 나가고 입금은 0원일 때",
+  description: "Claude Code 100/100%, Codex 주간 한도 대기, 오늘 입금 0원. AI 자동화 초보자가 $29로 첫 유료 제안을 검증하는 실행 키트.",
+  canonical: `${site}/ai-automation-0won-escape-kit.html`,
+})}
   <header class="top">
     <div class="wrap nav">
       <div class="brand">AI Automation 0 Won Escape Kit</div>
-      <a class="buy" href="https://gaiinmaster.gumroad.com/l/ai-automation-0won-escape-kit">US$29로 받기</a>
+      <a class="buy" href="${gumroad}">US$29로 받기</a>
     </div>
   </header>
 
@@ -202,8 +223,8 @@
           문제는 자동화가 아니라 <strong>사람이 돈을 내는 제안 구조</strong>일 가능성이 큽니다.
         </p>
         <div class="cta-row">
-          <a class="primary" href="https://gaiinmaster.gumroad.com/l/ai-automation-0won-escape-kit">US$29로 실행 키트 받기</a>
-          <a class="secondary" href="https://www.paypal.com/ncp/payment/L4XKCQNYXKZDE">PayPal로 결제하기</a>
+          <a class="primary" href="${gumroad}">US$29로 실행 키트 받기</a>
+          <a class="secondary" href="${paypal}">PayPal로 결제하기</a>
         </div>
         <div class="note">비싼 강의나 대행을 사기 전에, 먼저 시장 반응을 확인하는 저가 실행 키트입니다.</div>
       </div>
@@ -246,7 +267,7 @@
             “이번 달도 툴값만 나가고 입금은 0원일지 모른다”는 압박입니다.
             이 키트는 더 배우기 전에 팔릴 제안부터 꺼내게 만듭니다.
           </p>
-          <a class="primary" href="https://gaiinmaster.gumroad.com/l/ai-automation-0won-escape-kit">지금 US$29로 받기</a>
+          <a class="primary" href="${gumroad}">지금 US$29로 받기</a>
         </div>
       </div>
     </section>
@@ -299,12 +320,124 @@
         <div>Self-execution kit</div>
         <div class="amount">US$29</div>
         <p>한 번 더 비싼 툴을 결제하기 전에, 먼저 고객 반응을 확인하세요.</p>
-        <a class="primary" href="https://gaiinmaster.gumroad.com/l/ai-automation-0won-escape-kit">Gumroad에서 받기</a>
+        <a class="primary" href="${gumroad}">Gumroad에서 받기</a>
       </div>
     </section>
   </main>
-  <footer class="wrap">
-    수익 보장 없음. 맞춤 대행 없음. 구매자가 직접 실행하는 디지털 키트입니다.
-  </footer>
-</body>
-</html>
+${foot}`;
+
+const root = `${head({
+  title: "AI Automation 0 Won Escape Kit",
+  description: "AI 툴 비용은 늘어나는데 오늘 입금은 0원인 사람을 위한 첫 유료 제안 검증 키트.",
+  canonical: `${site}/`,
+})}
+  <main class="wrap hero">
+    <div>
+      <div class="eyebrow">AI 자동화 수익화 검증 키트</div>
+      <h1>툴값보다 먼저 결제 링크를 검증하세요.</h1>
+      <p class="lead">AI 자동화로 수익을 만들고 싶지만 오늘 입금이 0원이라면, 더 만들기 전에 팔릴 제안부터 확인해야 합니다.</p>
+      <div class="cta-row">
+        <a class="primary" href="./ai-automation-0won-escape-kit.html">판매 페이지 보기</a>
+        <a class="secondary" href="${gumroad}">US$29로 받기</a>
+      </div>
+    </div>
+    <aside class="dashboard">
+      <div class="dash-head"><strong>현재 병목</strong><span class="pill bad">제안 없음</span></div>
+      <div class="metric"><div><b>오늘 입금</b><span>수익화 목표와 현실의 간격</span></div><div class="pill bad">0원</div></div>
+      <div class="metric"><div><b>AI 툴 비용</b><span>Claude Code, Codex, 자동화 도구</span></div><div class="pill warn">증가</div></div>
+      <div class="metric"><div><b>결제 가능한 제안</b><span>고객이 바로 이해하는 문장</span></div><div class="pill bad">부족</div></div>
+    </aside>
+  </main>
+${foot}`;
+
+function articlePage({ file, title, description, h1, lead, rows }) {
+  return `${head({ title, description, canonical: `${site}/${file}` })}
+  <header class="top"><div class="wrap nav"><div class="brand">AI Automation 0 Won Escape Kit</div><a class="buy" href="${gumroad}">US$29로 받기</a></div></header>
+  <main>
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow">AI 자동화 초보자용 실전 점검</div>
+        <h1>${h1}</h1>
+        <p class="lead">${lead}</p>
+        <div class="cta-row"><a class="primary" href="${gumroad}">키트 받기</a><a class="secondary" href="./ai-automation-0won-escape-kit.html">랜딩 보기</a></div>
+      </div>
+      <aside class="dashboard">
+        <div class="dash-head"><strong>오늘의 신호</strong><span class="pill bad">결제 전환 낮음</span></div>
+        ${rows.map((row) => `<div class="metric"><div><b>${row[0]}</b><span>${row[1]}</span></div><div class="pill ${row[3]}">${row[2]}</div></div>`).join("\n        ")}
+      </aside>
+    </section>
+    <section class="band"><div class="wrap grid">
+      <div class="item"><h3>증상</h3><p>자동화는 늘었는데 고객에게 보낸 제안은 없거나, 너무 어렵고 비싸 보입니다.</p></div>
+      <div class="item"><h3>원인</h3><p>구매자가 얻는 결과보다 만든 도구 설명이 앞서면 초보자 시장에서는 바로 이탈합니다.</p></div>
+      <div class="item"><h3>처방</h3><p>작은 가격, 명확한 결과, 바로 실행할 수 있는 결제 흐름으로 먼저 검증합니다.</p></div>
+    </div></section>
+    <section class="wrap section split"><div><h2>더 큰 자동화 전에 작은 결제 검증부터</h2><p>이 키트는 완성된 대행 상품이 아니라, 지금 가진 AI 도구로 첫 유료 제안을 꺼내는 구조입니다. 실패해도 손실이 작고, 반응이 오면 다음 고가 서비스로 확장할 수 있습니다.</p></div><div class="price"><div>Validation kit</div><div class="amount">US$29</div><p>구독료를 한 번 더 결제하기 전에 고객 반응을 확인하세요.</p><a class="primary" href="${gumroad}">Gumroad에서 받기</a></div></section>
+  </main>
+${foot}`;
+}
+
+const pages = new Map([
+  ["ai-automation-0won-escape-kit.html", landing],
+  ["index.html", root],
+  ["ai-tool-subscription-zero-revenue.html", articlePage({
+    file: "ai-tool-subscription-zero-revenue.html",
+    title: "AI 툴 구독료는 나가는데 수익은 0원일 때",
+    description: "AI 자동화 초보자가 툴 구독료 지출 전에 먼저 확인해야 할 유료 제안 검증 흐름.",
+    h1: "AI 툴값은 자동 결제되는데, 왜 수익은 자동화되지 않을까?",
+    lead: "문제는 도구 수가 아닐 수 있습니다. 고객이 바로 이해하고 돈 낼 수 있는 제안이 없는 상태에서 자동화만 늘리면 지출 자동화가 먼저 완성됩니다.",
+    rows: [["오늘 입금", "구독료보다 먼저 봐야 할 숫자", "0원", "bad"], ["툴 구독", "AI, 자동화, 호스팅", "증가", "warn"], ["검증된 제안", "돈을 낼 이유가 보이는 문장", "부족", "bad"]],
+  })],
+  ["claude-code-limit-100-100.html", articlePage({
+    file: "claude-code-limit-100-100.html",
+    title: "Claude Code 100/100% 한도인데 오늘 입금 0원이라면",
+    description: "Claude Code 한도와 Codex 리셋을 기다리는 초보자가 먼저 점검해야 할 AI 자동화 수익화 병목.",
+    h1: "Claude Code 100/100%보다 무서운 건 결제 알림 0건입니다.",
+    lead: "5시간 한도는 다시 돌아옵니다. 하지만 고객이 이해하는 제안이 없으면 리셋 후에도 같은 자동화만 반복하게 됩니다.",
+    rows: [["Claude Code", "5시간 사용 한도", "100/100%", "bad"], ["다음 재설정", "작업은 다시 가능해짐", "4시간 후", "ok"], ["오늘 입금", "가장 차가운 현실 지표", "0원", "bad"]],
+  })],
+]);
+
+for (const [file, content] of pages) {
+  writeFileSync(file, content, "utf8");
+}
+
+writeFileSync("robots.txt", `User-agent: *
+Allow: /
+Sitemap: ${site}/sitemap.xml
+`, "utf8");
+
+writeFileSync("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>${site}/</loc><lastmod>2026-07-26</lastmod><priority>1.0</priority></url>
+  <url><loc>${site}/ai-automation-0won-escape-kit.html</loc><lastmod>2026-07-26</lastmod><priority>1.0</priority></url>
+  <url><loc>${site}/ai-tool-subscription-zero-revenue.html</loc><lastmod>2026-07-26</lastmod><priority>0.8</priority></url>
+  <url><loc>${site}/claude-code-limit-100-100.html</loc><lastmod>2026-07-26</lastmod><priority>0.8</priority></url>
+</urlset>
+`, "utf8");
+
+writeFileSync("share-posts.md", `# Share Posts
+
+## YouTube Shorts / TikTok caption
+AI 자동화로 돈 벌려고 시작했는데 오늘 입금 0원, Claude Code 100/100%, Codex 리셋 대기만 보고 있다면 문제는 자동화가 아니라 제안일 수 있습니다.
+
+더 비싼 툴 결제하기 전에 $29로 첫 유료 제안부터 검증하세요.
+${site}/ai-automation-0won-escape-kit.html
+
+#AI자동화 #수익화 #ClaudeCode #Codex #자동화
+
+## DEV / Product Hunt short intro
+I built a low-ticket Korean validation kit for beginners who are spending on AI automation tools but still have zero revenue. It focuses on the offer, landing copy, payment flow, and first outreach messages before buying another subscription.
+
+Landing: ${site}/ai-automation-0won-escape-kit.html
+Gumroad: ${gumroad}
+
+## Korean community post
+AI 자동화로 수익을 만들려고 하다가 툴 구독료만 늘고 입금은 0원인 분들을 위한 저가 실행 키트를 만들었습니다.
+
+고가 대행이나 강의가 아니라, 먼저 팔릴 제안을 검증하는 구성입니다. 랜딩 카피, 결제 흐름, 후킹 문구, DM/이메일 문구, 반박 대응, 체크리스트가 들어 있습니다.
+
+가격은 US$29로 낮췄습니다. 비싼 툴을 한 번 더 결제하기 전에 작은 검증부터 하자는 방향입니다.
+
+${site}/ai-automation-0won-escape-kit.html
+`, "utf8");
+

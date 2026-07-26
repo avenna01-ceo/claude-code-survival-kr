@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://avenna01-ceo.github.io/claude-code-survival-kr/sitemap.xml
