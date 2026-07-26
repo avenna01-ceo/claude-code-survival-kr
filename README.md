@@ -11,6 +11,9 @@ It may be the offer.
 **Get the $29 AI Automation 0 Won Escape Kit:**
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-0won-escape-kit.html
 
+**Free AI tool cost calculator:**
+https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.html
+
 No income guarantee. No custom implementation. A self-execution kit for validating
 a paid AI automation offer before buying another tool.
 
