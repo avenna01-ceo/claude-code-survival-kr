@@ -1,0 +1,11 @@
+file 'C:/Users/kkpet/Desktop/Eulera/repo/promo-assets/short-01.png'
+duration 2.4
+file 'C:/Users/kkpet/Desktop/Eulera/repo/promo-assets/short-02.png'
+duration 2.4
+file 'C:/Users/kkpet/Desktop/Eulera/repo/promo-assets/short-03.png'
+duration 2.4
+file 'C:/Users/kkpet/Desktop/Eulera/repo/promo-assets/short-04.png'
+duration 2.4
+file 'C:/Users/kkpet/Desktop/Eulera/repo/promo-assets/short-05.png'
+duration 2.4
+file 'C:/Users/kkpet/Desktop/Eulera/repo/promo-assets/short-05.png'
