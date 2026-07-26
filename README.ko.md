@@ -193,6 +193,7 @@ AI가 틀릴 때마다 **그 문장을 규칙 파일에 한 줄씩 적어두세�
 | [$13로 받기](https://www.paypal.com/ncp/payment/G7YDBCQ5TYVB6) | PayPal·해외카드 | 결제 즉시 메일 발송 |
 
 내용은 같습니다. 편한 쪽으로 하세요.
+목차와 안에 뭐가 들었는지는 → **[자세히 보기](https://avenna01-ceo.github.io/makhyeoss/book/)**
 
 이미 훅과 스킬, 서브에이전트를 직접 설계하고 계시면 사지 마세요. 새로 배울 게 적습니다.
 대부분의 사람에게는 위 README가 쓸모 있는 절반입니다.
