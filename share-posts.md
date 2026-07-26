@@ -14,6 +14,13 @@ I built a low-ticket Korean validation kit for beginners who are spending on AI 
 Landing: https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-0won-escape-kit.html
 Gumroad: https://gaiinmaster.gumroad.com/l/ai-automation-0won-escape-kit
 
+## Free calculator hook
+이번 달 AI 툴값 넣으면 $29 상품을 몇 개 팔아야 손익분기인지 바로 계산됩니다.
+
+자동화로 돈 벌기 전에, 먼저 내가 지금 얼마를 회수해야 하는지 확인하세요.
+
+https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.html
+
 ## Korean community post
 AI 자동화로 수익을 만들려고 하다가 툴 구독료만 늘고 입금은 0원인 분들을 위한 저가 실행 키트를 만들었습니다.
 

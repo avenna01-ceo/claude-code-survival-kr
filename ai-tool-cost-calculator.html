@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 툴값 손익분기 계산기 | 오늘 입금 0원 체크</title>
+  <meta name="description" content="AI 자동화 툴 구독료를 회수하려면 $29 상품을 몇 개 팔아야 하는지 바로 계산하는 무료 손익분기 계산기.">
+  <link rel="canonical" href="https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI 툴값 손익분기 계산기">
+  <meta property="og:description" content="오늘 입금 0원인데 툴값만 나간다면, 먼저 손익분기 판매 개수를 확인하세요.">
+  <meta property="og:url" content="https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.html">
+  <meta property="og:image" content="https://avenna01-ceo.github.io/claude-code-survival-kr/promo-assets/thumbnail.png">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+      background: #f7fafc;
+      color: #111827;
+      line-height: 1.55;
+      word-break: keep-all;
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 22px; }
+    header { background: #fff; border-bottom: 1px solid #dbe4ef; }
+    .nav { min-height: 64px; display: flex; justify-content: space-between; align-items: center; gap: 14px; }
+    .brand { font-weight: 900; }
+    a.cta {
+      display: inline-flex;
+      min-height: 42px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 14px;
+      border-radius: 6px;
+      background: #111827;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+    main { padding: 46px 0 54px; }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+      gap: 32px;
+      align-items: start;
+    }
+    .eyebrow {
+      display: inline-flex;
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid #fecaca;
+      background: #fff5f5;
+      color: #dc2626;
+      font-weight: 900;
+      font-size: 14px;
+    }
+    h1 { margin: 18px 0 14px; font-size: clamp(38px, 6vw, 66px); line-height: 1; letter-spacing: 0; }
+    .lead { font-size: 20px; color: #334155; margin: 0 0 22px; }
+    .panel {
+      background: #fff;
+      border: 1px solid #dbe4ef;
+      border-radius: 8px;
+      padding: 22px;
+      box-shadow: 0 24px 70px rgba(15,23,42,.1);
+    }
+    label { display: block; font-weight: 900; margin: 0 0 8px; }
+    input {
+      width: 100%;
+      height: 48px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 0 12px;
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+    .result {
+      margin-top: 10px;
+      padding: 18px;
+      border-radius: 8px;
+      background: #111827;
+      color: #fff;
+    }
+    .big { font-size: 54px; line-height: 1; font-weight: 950; color: #facc15; }
+    .muted { color: #64748b; }
+    .result .muted { color: #cbd5e1; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 34px; }
+    .card { background: #fff; border: 1px solid #dbe4ef; border-radius: 8px; padding: 18px; }
+    .card h2 { font-size: 20px; margin: 0 0 8px; }
+    .card p { margin: 0; color: #475569; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .red { background: #dc2626 !important; }
+    @media (max-width: 820px) {
+      .hero, .grid { grid-template-columns: 1fr; }
+      .nav { flex-direction: column; align-items: flex-start; padding: 12px 0; }
+      a.cta { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">AI Tool Cost Calculator</div>
+      <a class="cta" href="https://gaiinmaster.gumroad.com/l/ai-automation-0won-escape-kit">US$29 키트 받기</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">오늘 입금 0원인데 툴값은 빠져나가는 사람용</div>
+        <h1>이번 달 AI 툴값, 몇 개 팔아야 회수될까?</h1>
+        <p class="lead">Claude Code, Codex, 자동화 툴, 호스팅 비용을 넣으면 $29 상품 기준으로 손익분기 판매 개수를 바로 보여줍니다.</p>
+        <div class="actions">
+          <a class="cta red" href="https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-0won-escape-kit.html">판매 페이지 보기</a>
+          <a class="cta" href="https://www.paypal.com/ncp/payment/L4XKCQNYXKZDE">PayPal 결제</a>
+        </div>
+      </div>
+      <div class="panel">
+        <label for="cost">이번 달 AI 툴 총비용</label>
+        <input id="cost" type="number" value="120000" min="0" step="1000">
+        <label for="price">상품 가격</label>
+        <input id="price" type="number" value="42328" min="1000" step="1000">
+        <div class="result">
+          <div class="muted">손익분기 판매 개수</div>
+          <div class="big"><span id="units">3</span>개</div>
+          <div class="muted" id="explain">120,000원을 회수하려면 약 3개 판매가 필요합니다.</div>
+        </div>
+      </div>
+    </section>
+    <section class="grid">
+      <div class="card"><h2>0원 입금이 무서운 이유</h2><p>툴값은 매달 확정 지출인데, 검증되지 않은 자동화는 매출이 아니라 비용을 먼저 키웁니다.</p></div>
+      <div class="card"><h2>먼저 팔아야 할 것</h2><p>기능 설명이 아니라 고객이 지금 겪는 문제와 결제할 이유가 보이는 제안입니다.</p></div>
+      <div class="card"><h2>다음 행동</h2><p>큰 서비스 전에 작은 가격으로 반응을 확인하고, 반응이 오면 더 높은 상품으로 확장합니다.</p></div>
+    </section>
+  </main>
+  <script>
+    const cost = document.getElementById("cost");
+    const price = document.getElementById("price");
+    const units = document.getElementById("units");
+    const explain = document.getElementById("explain");
+    const fmt = new Intl.NumberFormat("ko-KR");
+    function calc() {
+      const c = Math.max(0, Number(cost.value || 0));
+      const p = Math.max(1, Number(price.value || 1));
+      const n = Math.ceil(c / p);
+      units.textContent = fmt.format(n);
+      explain.textContent = `${fmt.format(c)}원을 회수하려면 약 ${fmt.format(n)}개 판매가 필요합니다.`;
+    }
+    cost.addEventListener("input", calc);
+    price.addEventListener("input", calc);
+    calc();
+  </script>
+</body>
+</html>
