@@ -47,10 +47,34 @@ DEFAULT_PATTERNS = [
 COMMENT_PREFIXES = ("#", "//")
 
 
+def find_config(project: Path) -> Path | None:
+    """Locate .claude/protected.txt.
+
+    The cwd in the hook payload is normally the project root, but it can be a
+    path this process can't resolve the same way (shell-mapped paths on Windows,
+    for one). Falling back to the real working directory and to the folder this
+    script sits in keeps a user's rules from being silently ignored.
+    """
+    candidates = [
+        project / ".claude" / "protected.txt",
+        Path.cwd() / ".claude" / "protected.txt",
+        Path(__file__).resolve().parent / "protected.txt",
+    ]
+    seen = set()
+    for c in candidates:
+        key = str(c)
+        if key in seen:
+            continue
+        seen.add(key)
+        if c.is_file():
+            return c
+    return None
+
+
 def load_patterns(project: Path) -> tuple[list[str], bool]:
     """Read .claude/protected.txt. Returns (patterns, used_defaults)."""
-    cfg = project / ".claude" / "protected.txt"
-    if not cfg.is_file():
+    cfg = find_config(project)
+    if cfg is None:
         return DEFAULT_PATTERNS, True
 
     patterns: list[str] = []
@@ -88,10 +112,15 @@ def relative_to_project(path: str, project: Path) -> str:
         p = Path(path).expanduser().resolve()
     except (OSError, RuntimeError):
         return path.replace("\\", "/")
-    try:
-        return p.relative_to(project).as_posix()
-    except ValueError:
-        return p.as_posix()
+    # Try the payload's project root first, then the real cwd — same reason as
+    # find_config. A directory pattern like `migrations/**` only works if we
+    # manage to make the path relative to *something*.
+    for base in (project, Path.cwd()):
+        try:
+            return p.relative_to(base).as_posix()
+        except ValueError:
+            continue
+    return p.as_posix()
 
 
 def matches(rel: str, pattern: str) -> bool:
