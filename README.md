@@ -1,14 +1,27 @@
-# Stop Your AI From Breaking Working Code
+﻿# Stop Your AI From Breaking Working Code
 
 > Rules and prompts that keep Claude Code, Cursor, and Codex from wrecking things that already worked.
 > Everything here is copy-paste. Explanations kept to a minimum.
+## Paying for AI tools but still at $0?
 
-**[한국어 →](README.ko.md)**
+If Claude Code limits are full, Codex is waiting for reset, automations are running,
+and the payment notification is still silent, the bottleneck may not be automation.
+It may be the offer.
+
+**Get the $29 AI Automation 0 Won Escape Kit:**
+https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-0won-escape-kit.html
+
+No income guarantee. No custom implementation. A self-execution kit for validating
+a paid AI automation offer before buying another tool.
+
+---
+
+**[?쒓뎅????(README.ko.md)**
 
 The first two weeks feel like magic. Then the codebase grows past what the model
 can hold at once, and it starts **fixing A while breaking B.**
 
-That isn't a skill problem. It's a structure problem — which means prompting
+That isn't a skill problem. It's a structure problem ??which means prompting
 harder won't fix it. Constraints will.
 
 ---
@@ -18,7 +31,7 @@ harder won't fix it. Constraints will.
 Create `CLAUDE.md` in your project root and paste this.
 Claude Code reads it automatically at the start of every conversation.
 
-*(Cursor → `.cursorrules`, Codex/Copilot → `AGENTS.md`. Same content.)*
+*(Cursor ??`.cursorrules`, Codex/Copilot ??`AGENTS.md`. Same content.)*
 
 ```markdown
 # Project
@@ -30,7 +43,7 @@ Claude Code reads it automatically at the start of every conversation.
 [what works, what doesn't yet]
 
 ## Do not touch
-- [file/folder] — [why]
+- [file/folder] ??[why]
 
 ## Rules
 - Do not modify files I did not ask you to modify
@@ -46,7 +59,7 @@ so no behavior changes.
 
 **Prohibitions have a clear edge. They land immediately.**
 
-| ❌ No effect | ⭕ Works |
+| ??No effect | 狩?Works |
 |---|---|
 | Write clean code | Do not modify files I didn't ask about |
 | Be careful | Do not merge without tests |
@@ -76,7 +89,7 @@ Works better than scolding. It ends up confessing:
 Don't tell me it works. Write a test and show me it passes.
 ```
 Models are **bad at catching their own errors.** They review with the same
-assumptions they built with — so a wrong assumption survives both passes.
+assumptions they built with ??so a wrong assumption survives both passes.
 "Looks good" is an opinion. A passing test is evidence.
 
 ### 4. Before starting a fresh chat
@@ -118,7 +131,7 @@ Long sessions get worse, and it isn't your imagination.
 As the conversation grows, **abandoned directions and corrected mistakes**
 all keep counting as current context. The signal gets buried in its own history.
 
-**Start a fresh session every 3–5 tasks.** Run prompt #4 before you close.
+**Start a fresh session every 3?? tasks.** Run prompt #4 before you close.
 
 ### Anger is the signal
 
@@ -203,12 +216,12 @@ changes tomorrow.
 Everything above is free and always will be. If it was useful and you want the
 full treatment, there's a 25-page field manual that goes deeper:
 
-**[Working With Claude Code — Field Manual](https://www.paypal.com/ncp/payment/JFJG55RX6X8B8)** · $19 · PDF
+**[Working With Claude Code ??Field Manual](https://www.paypal.com/ncp/payment/JFJG55RX6X8B8)** 쨌 $19 쨌 PDF
 
 - Approval gates, hooks, and kill switches in detail
-- Skills — turning repeated instructions into assets
+- Skills ??turning repeated instructions into assets
 - Cost control and when *not* to build an autonomous loop
-- 7 copy-paste templates + a symptom → cause → fix table
+- 7 copy-paste templates + a symptom ??cause ??fix table
 - The chapter on **not fooling yourself about results**
 
 Don't buy it if you already design your own hooks, skills, and subagents.
@@ -217,11 +230,12 @@ You'd learn little. The README above is the useful half for most people.
 ## Contributing
 
 If you have a line that actually works for you, open a PR or an issue.
-Real ones only — rules that survived contact with a real codebase.
+Real ones only ??rules that survived contact with a real codebase.
 
 ## Stuck right now?
 
-- Ask a question → https://avenna01-ceo.github.io/makhyeoss/
-- Threads (KR) → [@k_aria26](https://www.threads.com/@k_aria26)
+- Ask a question ??https://avenna01-ceo.github.io/makhyeoss/
+- Threads (KR) ??[@k_aria26](https://www.threads.com/@k_aria26)
 
 Free. If I can solve it I will; if I can't I'll say so.
+
