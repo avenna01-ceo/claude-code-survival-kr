@@ -182,6 +182,22 @@ changes tomorrow.
 
 ---
 
+## The longer version
+
+Everything above is free and always will be. If it was useful and you want the
+full treatment, there's a 25-page field manual that goes deeper:
+
+**[Working With Claude Code — Field Manual](https://www.paypal.com/ncp/payment/JFJG55RX6X8B8)** · $19 · PDF
+
+- Approval gates, hooks, and kill switches in detail
+- Skills — turning repeated instructions into assets
+- Cost control and when *not* to build an autonomous loop
+- 7 copy-paste templates + a symptom → cause → fix table
+- The chapter on **not fooling yourself about results**
+
+Don't buy it if you already design your own hooks, skills, and subagents.
+You'd learn little. The README above is the useful half for most people.
+
 ## Contributing
 
 If you have a line that actually works for you, open a PR or an issue.
