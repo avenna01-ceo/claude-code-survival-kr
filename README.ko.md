@@ -135,6 +135,8 @@ It matches the pattern '.env' listed in .claude/protected.txt.
 
 설치 2분, 의존성 없음. 설득당하지 않습니다.
 `.claude/protected.txt`에 건드리면 안 되는 것만 적어두면 끝입니다.
+`Bash`용도 따로 있습니다 — `git reset --hard`나 `rm -rf`는 Edit을 안 거치니까
+별도로 막아야 합니다.
 
 ---
 

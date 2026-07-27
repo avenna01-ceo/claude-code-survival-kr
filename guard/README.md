@@ -96,10 +96,54 @@ echo '{"tool_name":"Edit","tool_input":{"file_path":".env"},"cwd":"'"$PWD"'"}' |
 
 **Doesn't**
 
-- Doesn't block `Bash`. `rm -rf` still goes through. Gate that separately, or
-  add a `Bash` matcher and inspect the command string.
+- Doesn't block `Bash`. `rm -rf` still goes through — see below.
 - Doesn't protect against a user who edits `protected.txt` themselves. It's a
   guardrail, not a permission system.
+
+---
+
+## Bash is a separate problem — [`bash_guard.py`](bash_guard.py)
+
+`guard.py` only sees `Edit`/`Write`. `git reset --hard` goes through `Bash` and
+sails straight past it. That gap is how people lose hours.
+
+A report filed this week: the model ran `git checkout --` inside a shell loop it
+wrote itself, the loop's own guard clause never engaged, and every uncommitted
+file in the repo went with it. Unstaged changes have no reflog and no stash.
+
+The unrecoverable set is short enough to just gate:
+
+```
+git checkout --   git reset --hard   git clean -f
+git restore       git push --force   rm -rf
+```
+
+```bash
+curl -o .claude/bash_guard.py https://raw.githubusercontent.com/avenna01-ceo/claude-code-survival-kr/main/guard/bash_guard.py
+```
+
+```json
+{ "matcher": "Bash",
+  "hooks": [{ "type": "command", "command": "python3 .claude/bash_guard.py" }] }
+```
+
+Two choices worth copying if you write your own:
+
+**Scan the whole command string.** The dangerous call is rarely the first token —
+it's inside a loop or behind an `&&`. Anything checking `argv[0]` misses it.
+
+**Only list what's genuinely irreversible.** `git reset --soft`, `git clean -n`
+and `--force-with-lease` stay allowed. A guard that fires on safe variants gets
+switched off within a day, and then you have nothing.
+
+It names the reversible alternative in the refusal, because a bare "denied" gets
+you a model that retries with `sh -c`:
+
+```
+Blocked by bash_guard.py: git checkout --
+This discards uncommitted changes in the working tree, with no reflog and no stash.
+Use this instead: git stash push -- <paths>
+```
 
 ---
 

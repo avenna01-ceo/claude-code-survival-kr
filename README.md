@@ -134,6 +134,8 @@ It matches the pattern '.env' listed in .claude/protected.txt.
 ```
 
 Two minutes to install, no dependencies, and it can't be talked out of it.
+There's a companion for `Bash` too — `git reset --hard` and `rm -rf` don't go
+through `Edit`, so they need their own gate.
 List what must never be touched in `.claude/protected.txt` and stop worrying about it.
 
 ---
