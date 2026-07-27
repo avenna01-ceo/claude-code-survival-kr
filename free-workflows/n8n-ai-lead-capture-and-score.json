@@ -3,6 +3,19 @@
   "nodes": [
     {
       "parameters": {
+        "content": "Free AI Lead Capture and Score Workflow\n\nUse this before sending a paid offer. It collects lead pain, budget, urgency, and source, then segments the lead into hot, warm, or cold.\n\nEthical use: do not scrape or spam. Connect this to a form or opted-in inquiry source.",
+        "height": 240,
+        "width": 360,
+        "color": 4
+      },
+      "id": "workflow-intro-note",
+      "name": "Workflow Summary",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [120, 20]
+    },
+    {
+      "parameters": {
         "path": "ai-lead-capture",
         "responseMode": "lastNode",
         "options": {}
@@ -30,6 +43,19 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [480, 300]
+    },
+    {
+      "parameters": {
+        "content": "Lead scoring logic\n\nHot lead: strong revenue pain, tool-cost pain, enough budget, and urgent timing.\nWarm/cold lead: send proof or a lighter qualifying question before pitching.",
+        "height": 200,
+        "width": 320,
+        "color": 5
+      },
+      "id": "scoring-note",
+      "name": "Scoring Notes",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [660, 20]
     },
     {
       "parameters": {
@@ -62,6 +88,19 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
       "position": [960, 300]
+    },
+    {
+      "parameters": {
+        "content": "Next-step routing\n\nHot leads get the paid-offer path.\nWarm/cold leads get education, proof, or one qualifying question.\n\nReplace the URLs with your own offer and proof pages.",
+        "height": 220,
+        "width": 320,
+        "color": 6
+      },
+      "id": "routing-note",
+      "name": "Routing Notes",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [1080, 20]
     },
     {
       "parameters": {
