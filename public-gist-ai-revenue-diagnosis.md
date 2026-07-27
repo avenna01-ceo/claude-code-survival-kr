@@ -16,6 +16,12 @@ https://avenna01-ceo.github.io/claude-code-survival-kr/free-workflows/n8n-ai-lea
 DEV tutorial for the free n8n workflow:
 https://dev.to/taehyeon_jeon_5618e0c8332/free-n8n-ai-lead-capture-workflow-score-leads-before-you-chase-them-49k
 
+DEV SNS sales formula article:
+https://dev.to/taehyeon_jeon_5618e0c8332/the-sns-sales-formula-i-applied-to-an-ai-automation-template-pack-2peo
+
+SNS formula proof page:
+https://avenna01-ceo.github.io/claude-code-survival-kr/sns-sales-formula-applied.html?utm_source=gist&utm_medium=public&utm_campaign=72h
+
 Free 60-second diagnosis:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-revenue-diagnosis.html?utm_source=gist&utm_medium=public&utm_campaign=72h
 

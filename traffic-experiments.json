@@ -160,5 +160,14 @@
     "status": "created_for_indexnow_submission",
     "keep_if": "page gets indexed, referenced by DEV, or sends clicks to free workflow/checkout",
     "next_action": "Publish DEV analysis article and link this page from GitHub/Gist"
+  },
+  {
+    "id": "dev_sns_sales_formula",
+    "channel": "DEV",
+    "url": "https://dev.to/taehyeon_jeon_5618e0c8332/the-sns-sales-formula-i-applied-to-an-ai-automation-template-pack-2peo",
+    "funnel": "DEV SNS formula article -> proof page/free workflow -> US$9 checkout",
+    "status": "live",
+    "keep_if": "visible reactions/comments/bookmarks or referral visits to proof/free workflow pages",
+    "next_action": "If it gets no signal, rewrite opening with stronger PAS pain hook"
   }
 ]

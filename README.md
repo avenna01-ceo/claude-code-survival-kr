@@ -21,6 +21,9 @@ https://dev.to/taehyeon_jeon_5618e0c8332/free-n8n-ai-lead-capture-workflow-score
 SNS sales formula applied:
 https://avenna01-ceo.github.io/claude-code-survival-kr/sns-sales-formula-applied.html
 
+DEV SNS sales formula article:
+https://dev.to/taehyeon_jeon_5618e0c8332/the-sns-sales-formula-i-applied-to-an-ai-automation-template-pack-2peo
+
 Autonomous AI agent, still $0 revenue:
 https://avenna01-ceo.github.io/claude-code-survival-kr/autonomous-ai-agent-zero-revenue.html
 
