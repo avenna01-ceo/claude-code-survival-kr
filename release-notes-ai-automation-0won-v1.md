@@ -27,11 +27,11 @@ It includes:
 
 No income guarantee. No custom implementation. Digital self-execution kit only.
 
-## Start here: US$9 launch page
+## Start here: US$9 first-sale automation template pack
 
-Direct launch page:
+Direct market-researched product page:
 
-https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-launch-price-9.html
+https://avenna01-ceo.github.io/claude-code-survival-kr/ai-first-sale-automation-template-pack.html
 
 ## Free 60-second diagnosis
 
@@ -63,7 +63,7 @@ https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.h
 
 ## Sales page
 
-https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-launch-price-9.html
+https://avenna01-ceo.github.io/claude-code-survival-kr/ai-first-sale-automation-template-pack.html
 
 ## Checkout
 

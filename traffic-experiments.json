@@ -130,7 +130,7 @@
     "channel": "GitHub Pages Landing Variant",
     "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/ai-first-sale-automation-template-pack.html",
     "funnel": "market-researched pack page -> Gumroad checkout",
-    "status": "live_pending_push",
+    "status": "live_indexnow_submitted_primary_homepage_gumroad_updated",
     "keep_if": "first Gumroad sale or checkout visits appear",
     "next_action": "Make this the primary route and update Gumroad product copy"
   }

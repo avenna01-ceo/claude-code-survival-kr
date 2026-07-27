@@ -1,6 +1,6 @@
-**US$9 launch page:** if your autonomous AI agent is running but revenue is still $0, start here.
+**US$9 first-sale template pack:** if your autonomous AI agent is running but revenue is still $0, start here.
 
-https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-launch-price-9.html?utm_source=devto&utm_medium=agent_article_top_cta&utm_campaign=72h
+https://avenna01-ceo.github.io/claude-code-survival-kr/ai-first-sale-automation-template-pack.html?utm_source=devto&utm_medium=agent_article_top_cta&utm_campaign=72h
 
 ---
 
