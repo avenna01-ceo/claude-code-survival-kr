@@ -25,6 +25,9 @@ https://avenna01-ceo.github.io/claude-code-survival-kr/claude-code-vs-codex-reve
 DEV article:
 https://dev.to/taehyeon_jeon_5618e0c8332/if-your-ai-automations-are-running-but-revenue-is-still-0-diagnose-the-offer-first-5fo1
 
+DEV follow-up for autonomous AI agents stuck at $0:
+https://dev.to/taehyeon_jeon_5618e0c8332/autonomous-ai-agent-running-still-0-revenue-fix-the-offer-first-1a6l
+
 Korean DEV article:
 https://dev.to/taehyeon_jeon_5618e0c8332/ai-jadonghwaneun-dolaganeunde-oneul-ibgeumi-0weoniramyeon-30le
 

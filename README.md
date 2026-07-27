@@ -12,6 +12,9 @@ https://avenna01-ceo.github.io/claude-code-survival-kr/autonomous-ai-agent-zero-
 Free diagnosis:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-revenue-diagnosis.html
 
+DEV follow-up for autonomous AI agents stuck at $0:
+https://dev.to/taehyeon_jeon_5618e0c8332/autonomous-ai-agent-running-still-0-revenue-fix-the-offer-first-1a6l
+
 Break-even calculator:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.html
 

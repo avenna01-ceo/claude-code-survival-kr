@@ -18,6 +18,15 @@
     "next_action": "If stronger than English, make Korean-first pages and copy"
   },
   {
+    "id": "dev_agent_zero_revenue",
+    "channel": "DEV",
+    "url": "https://dev.to/taehyeon_jeon_5618e0c8332/autonomous-ai-agent-running-still-0-revenue-fix-the-offer-first-1a6l",
+    "funnel": "DEV follow-up -> agent zero revenue page -> diagnosis/30min offer -> kit",
+    "status": "live",
+    "keep_if": "visible reactions/comments/bookmarks or referral sales within 24h",
+    "next_action": "If it gets engagement, edit top CTA stronger and add Korean equivalent"
+  },
+  {
     "id": "github_issue_1",
     "channel": "GitHub Issue",
     "url": "https://github.com/avenna01-ceo/claude-code-survival-kr/issues/1",
