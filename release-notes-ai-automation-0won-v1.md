@@ -33,6 +33,10 @@ Check whether the bottleneck is your automation or your offer:
 
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-revenue-diagnosis.html
 
+Traffic hub with problem-specific entry pages:
+
+https://avenna01-ceo.github.io/claude-code-survival-kr/traffic-index.html
+
 ## Launch article
 
 https://dev.to/taehyeon_jeon_5618e0c8332/if-your-ai-automations-are-running-but-revenue-is-still-0-diagnose-the-offer-first-5fo1
