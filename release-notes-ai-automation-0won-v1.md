@@ -37,6 +37,14 @@ https://avenna01-ceo.github.io/claude-code-survival-kr/ai-revenue-diagnosis.html
 
 https://dev.to/taehyeon_jeon_5618e0c8332/if-your-ai-automations-are-running-but-revenue-is-still-0-diagnose-the-offer-first-5fo1
 
+Korean version:
+
+https://dev.to/taehyeon_jeon_5618e0c8332/ai-jadonghwaneun-dolaganeunde-oneul-ibgeumi-0weoniramyeon-30le
+
+Public gist:
+
+https://gist.github.com/avenna01-ceo/a6cfa46887eddf9a9efc9617d8146f6b
+
 ## Free calculator
 
 Check how many US$29 sales are needed to recover this month's AI tool costs:
