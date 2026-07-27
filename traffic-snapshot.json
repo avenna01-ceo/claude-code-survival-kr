@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-07-27T09:51:22.177Z",
+  "checkedAt": "2026-07-27T10:04:13.767Z",
   "checks": [
     {
       "id": "dev_en_article",
@@ -120,6 +120,14 @@
       "ok": true,
       "status": 200,
       "finalUrl": "https://avenna01-ceo.github.io/claude-code-survival-kr/ai-first-sale-automation-template-pack.html"
+    },
+    {
+      "id": "free_n8n_lead_capture_workflow",
+      "channel": "GitHub Pages Free Workflow",
+      "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/free-n8n-ai-lead-capture-workflow.html",
+      "ok": false,
+      "status": 404,
+      "finalUrl": "https://avenna01-ceo.github.io/claude-code-survival-kr/free-n8n-ai-lead-capture-workflow.html"
     }
   ],
   "devChecks": [

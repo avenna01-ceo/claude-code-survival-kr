@@ -7,6 +7,12 @@ It may be offer diagnosis.
 US$9 first-sale automation template pack:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-first-sale-automation-template-pack.html?utm_source=gist&utm_medium=public_top&utm_campaign=72h
 
+Free n8n AI lead capture workflow:
+https://avenna01-ceo.github.io/claude-code-survival-kr/free-n8n-ai-lead-capture-workflow.html?utm_source=gist&utm_medium=public_top&utm_campaign=72h
+
+Direct JSON:
+https://avenna01-ceo.github.io/claude-code-survival-kr/free-workflows/n8n-ai-lead-capture-and-score.json?utm_source=gist&utm_medium=public_top&utm_campaign=72h
+
 Free 60-second diagnosis:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-revenue-diagnosis.html?utm_source=gist&utm_medium=public&utm_campaign=72h
 

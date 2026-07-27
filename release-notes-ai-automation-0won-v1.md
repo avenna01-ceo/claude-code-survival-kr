@@ -33,6 +33,16 @@ Direct market-researched product page:
 
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-first-sale-automation-template-pack.html
 
+## Free n8n workflow
+
+Download the free AI lead capture and scoring workflow:
+
+https://avenna01-ceo.github.io/claude-code-survival-kr/free-n8n-ai-lead-capture-workflow.html
+
+Direct JSON:
+
+https://avenna01-ceo.github.io/claude-code-survival-kr/free-workflows/n8n-ai-lead-capture-and-score.json
+
 ## Free 60-second diagnosis
 
 Check whether the bottleneck is your automation or your offer:
