@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-07-27T01:16:36.947Z",
+  "checkedAt": "2026-07-27T01:33:39.347Z",
   "checks": [
     {
       "id": "dev_en_article",
@@ -48,6 +48,22 @@
       "ok": true,
       "status": 200,
       "finalUrl": "https://avenna01-ceo.github.io/claude-code-survival-kr/traffic-index.html"
+    },
+    {
+      "id": "shareable_calculator",
+      "channel": "GitHub Pages Tool",
+      "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.html",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.html"
+    },
+    {
+      "id": "claude_vs_codex_page",
+      "channel": "GitHub Pages SEO",
+      "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/claude-code-vs-codex-revenue-bottleneck.html",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://avenna01-ceo.github.io/claude-code-survival-kr/claude-code-vs-codex-revenue-bottleneck.html"
     }
   ],
   "devChecks": [

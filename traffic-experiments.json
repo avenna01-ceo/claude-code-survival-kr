@@ -52,5 +52,23 @@
     "status": "live_indexnow_submitted",
     "keep_if": "pages indexed or diagnosis traffic appears",
     "next_action": "Expand only around keywords that show discovery"
+  },
+  {
+    "id": "shareable_calculator",
+    "channel": "GitHub Pages Tool",
+    "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.html",
+    "funnel": "calculator -> copied share text -> diagnosis -> kit",
+    "status": "live_indexnow_resubmitted",
+    "keep_if": "calculator page becomes strongest entry or copied text drives referrals",
+    "next_action": "If no signal, create a sharper calculator result image/thumbnail"
+  },
+  {
+    "id": "claude_vs_codex_page",
+    "channel": "GitHub Pages SEO",
+    "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/claude-code-vs-codex-revenue-bottleneck.html",
+    "funnel": "comparison page -> diagnosis/calculator -> kit",
+    "status": "live_indexnow_submitted",
+    "keep_if": "indexed or GitHub Pages traffic appears",
+    "next_action": "If it works, create more comparison pages around AI tool limits"
   }
 ]
