@@ -37,7 +37,9 @@ The full US$9 pack adds the rest of the path:
 - Objection reply bank
 - 48-hour first-sale checklist
 
-Full pack: https://avenna01-ceo.github.io/claude-code-survival-kr/ai-first-sale-automation-template-pack.html
+Full pack page: https://avenna01-ceo.github.io/claude-code-survival-kr/ai-first-sale-automation-template-pack.html
+
+Direct Gumroad checkout: https://gaiinmaster.gumroad.com/l/ai-automation-0won-escape-kit
 
 No revenue guarantee. No scraped outreach. No fake scarcity.
 
