@@ -13,6 +13,9 @@ https://avenna01-ceo.github.io/claude-code-survival-kr/free-n8n-ai-lead-capture-
 Direct JSON:
 https://avenna01-ceo.github.io/claude-code-survival-kr/free-workflows/n8n-ai-lead-capture-and-score.json?utm_source=gist&utm_medium=public_top&utm_campaign=72h
 
+Free n8n workflow standalone Gist:
+https://gist.github.com/avenna01-ceo/0fab852c3ede3609778dc0631bc04ca9
+
 DEV tutorial for the free n8n workflow:
 https://dev.to/taehyeon_jeon_5618e0c8332/free-n8n-ai-lead-capture-workflow-score-leads-before-you-chase-them-49k
 

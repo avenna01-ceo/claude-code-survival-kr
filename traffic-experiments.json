@@ -169,5 +169,14 @@
     "status": "live",
     "keep_if": "visible reactions/comments/bookmarks or referral visits to proof/free workflow pages",
     "next_action": "If it gets no signal, rewrite opening with stronger PAS pain hook"
+  },
+  {
+    "id": "free_n8n_workflow_standalone_gist",
+    "channel": "GitHub Gist",
+    "url": "https://gist.github.com/avenna01-ceo/0fab852c3ede3609778dc0631bc04ca9",
+    "funnel": "standalone free workflow gist -> free workflow page -> US$9 checkout",
+    "status": "live",
+    "keep_if": "gist appears in GitHub search or gets copied/shared",
+    "next_action": "Use this Gist URL in community-safe n8n posts"
   }
 ]

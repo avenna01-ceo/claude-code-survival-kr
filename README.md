@@ -15,6 +15,9 @@ https://avenna01-ceo.github.io/claude-code-survival-kr/ai-first-sale-automation-
 Free n8n lead capture workflow:
 https://avenna01-ceo.github.io/claude-code-survival-kr/free-n8n-ai-lead-capture-workflow.html
 
+Free n8n workflow Gist:
+https://gist.github.com/avenna01-ceo/0fab852c3ede3609778dc0631bc04ca9
+
 DEV tutorial for the free n8n workflow:
 https://dev.to/taehyeon_jeon_5618e0c8332/free-n8n-ai-lead-capture-workflow-score-leads-before-you-chase-them-49k
 
