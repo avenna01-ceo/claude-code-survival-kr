@@ -79,5 +79,14 @@
     "status": "live_indexnow_submitted",
     "keep_if": "drives direct Gumroad clicks or gets indexed",
     "next_action": "If it beats diagnosis framing, move it to primary homepage"
+  },
+  {
+    "id": "nine_dollar_mini_pack",
+    "channel": "GitHub Pages Demand Test",
+    "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-9-dollar-mini-pack.html",
+    "funnel": "low price demand test -> issue interest or $29 kit",
+    "status": "live_indexnow_submitted",
+    "keep_if": "issue interest comment appears or $29 kit clicks increase",
+    "next_action": "If interest appears, create actual $9 product; if not, discard"
   }
 ]
