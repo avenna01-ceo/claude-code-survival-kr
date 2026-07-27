@@ -13,6 +13,9 @@ https://avenna01-ceo.github.io/claude-code-survival-kr/traffic-index.html?utm_so
 AI tool cost break-even calculator:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.html?utm_source=gist&utm_medium=public&utm_campaign=72h
 
+Claude Code vs Codex revenue bottleneck:
+https://avenna01-ceo.github.io/claude-code-survival-kr/claude-code-vs-codex-revenue-bottleneck.html?utm_source=gist&utm_medium=public&utm_campaign=72h
+
 DEV article:
 https://dev.to/taehyeon_jeon_5618e0c8332/if-your-ai-automations-are-running-but-revenue-is-still-0-diagnose-the-offer-first-5fo1
 
