@@ -27,7 +27,13 @@ It includes:
 
 No income guarantee. No custom implementation. Digital self-execution kit only.
 
-## Start here: free 60-second diagnosis
+## Start here: US$9 launch page
+
+Direct launch page:
+
+https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-launch-price-9.html
+
+## Free 60-second diagnosis
 
 Check whether the bottleneck is your automation or your offer:
 
@@ -57,7 +63,7 @@ https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.h
 
 ## Sales page
 
-https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-0won-escape-kit.html
+https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-launch-price-9.html
 
 ## Checkout
 
