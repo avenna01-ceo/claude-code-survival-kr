@@ -7,6 +7,9 @@ It may be offer diagnosis.
 Free 60-second diagnosis:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-revenue-diagnosis.html?utm_source=gist&utm_medium=public&utm_campaign=72h
 
+Traffic hub:
+https://avenna01-ceo.github.io/claude-code-survival-kr/traffic-index.html?utm_source=gist&utm_medium=public&utm_campaign=72h
+
 AI tool cost break-even calculator:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.html?utm_source=gist&utm_medium=public&utm_campaign=72h
 
