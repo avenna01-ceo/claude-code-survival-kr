@@ -115,5 +115,14 @@
     "status": "live_indexnow_submitted_primary_homepage",
     "keep_if": "Gumroad checkout visits or first sale appears",
     "next_action": "If no sale, use this as primary homepage and public profile link"
+  },
+  {
+    "id": "ai_agent_views_no_sales",
+    "channel": "GitHub Pages SEO",
+    "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/ai-agent-views-no-sales.html",
+    "funnel": "views/no sales search -> US$9 launch page -> Gumroad checkout",
+    "status": "live_pending_push",
+    "keep_if": "indexed or launch page clicks increase",
+    "next_action": "If this query gets signal, publish a DEV follow-up on views versus paid offers"
   }
 ]
