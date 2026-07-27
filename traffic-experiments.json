@@ -187,5 +187,14 @@
     "status": "created_for_indexnow_submission",
     "keep_if": "Korean DEV/Gist/GitHub surfaces send clicks or checkout visits rise",
     "next_action": "Use as primary Korean CTA and update Korean public surfaces"
+  },
+  {
+    "id": "kr_cta_on_existing_seo_pages",
+    "channel": "GitHub Pages SEO CTA Update",
+    "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/traffic-index.html",
+    "funnel": "existing SEO page -> Korean landing or free n8n workflow -> Gumroad checkout",
+    "status": "created_for_indexnow_submission",
+    "keep_if": "Korean landing referrals increase or checkout visits rise",
+    "next_action": "If this gets signal, add Korean CTA to remaining SEO pages and calculator"
   }
 ]
