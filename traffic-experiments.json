@@ -112,7 +112,7 @@
     "channel": "GitHub Pages Landing Variant",
     "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-launch-price-9.html",
     "funnel": "launch price page -> Gumroad $9 checkout",
-    "status": "live_pending_push",
+    "status": "live_indexnow_submitted_primary_homepage",
     "keep_if": "Gumroad checkout visits or first sale appears",
     "next_action": "If no sale, use this as primary homepage and public profile link"
   }
