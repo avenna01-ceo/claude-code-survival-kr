@@ -18,6 +18,9 @@ https://avenna01-ceo.github.io/claude-code-survival-kr/free-n8n-ai-lead-capture-
 DEV tutorial for the free n8n workflow:
 https://dev.to/taehyeon_jeon_5618e0c8332/free-n8n-ai-lead-capture-workflow-score-leads-before-you-chase-them-49k
 
+SNS sales formula applied:
+https://avenna01-ceo.github.io/claude-code-survival-kr/sns-sales-formula-applied.html
+
 Autonomous AI agent, still $0 revenue:
 https://avenna01-ceo.github.io/claude-code-survival-kr/autonomous-ai-agent-zero-revenue.html
 

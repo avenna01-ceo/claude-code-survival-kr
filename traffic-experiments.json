@@ -151,5 +151,14 @@
     "status": "live",
     "keep_if": "visible reactions/comments/bookmarks or referral visits to the free workflow page",
     "next_action": "If DEV gets signal, edit the top paragraph with a stronger download CTA"
+  },
+  {
+    "id": "sns_sales_formula_applied",
+    "channel": "GitHub Pages Trust Builder",
+    "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/sns-sales-formula-applied.html",
+    "funnel": "SNS formula proof page -> free n8n workflow or US$9 checkout",
+    "status": "created_for_indexnow_submission",
+    "keep_if": "page gets indexed, referenced by DEV, or sends clicks to free workflow/checkout",
+    "next_action": "Publish DEV analysis article and link this page from GitHub/Gist"
   }
 ]
