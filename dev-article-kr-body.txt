@@ -1,3 +1,9 @@
+**먼저 여기서 확인하세요:** AI 툴값은 나가는데 오늘 입금이 0원이라면 60초 무료 진단부터 해보세요.
+
+https://avenna01-ceo.github.io/claude-code-survival-kr/ai-revenue-diagnosis.html?utm_source=devto&utm_medium=kr_article_top_cta&utm_campaign=72h
+
+---
+
 AI 자동화로 돈을 벌고 싶어서 Claude Code, Codex, 자동화 툴, 결제 페이지까지 붙였는데 오늘 입금이 0원이라면, 문제는 자동화가 아닐 수 있습니다.
 
 대부분은 더 많은 자동화를 붙이려고 합니다.

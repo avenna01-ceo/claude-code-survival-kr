@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-07-27T01:10:48.951Z",
+  "checks": [
+    {
+      "id": "dev_en_article",
+      "channel": "DEV",
+      "url": "https://dev.to/taehyeon_jeon_5618e0c8332/if-your-ai-automations-are-running-but-revenue-is-still-0-diagnose-the-offer-first-5fo1",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://dev.to/taehyeon_jeon_5618e0c8332/if-your-ai-automations-are-running-but-revenue-is-still-0-diagnose-the-offer-first-5fo1"
+    },
+    {
+      "id": "dev_kr_article",
+      "channel": "DEV",
+      "url": "https://dev.to/taehyeon_jeon_5618e0c8332/ai-jadonghwaneun-dolaganeunde-oneul-ibgeumi-0weoniramyeon-30le",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://dev.to/taehyeon_jeon_5618e0c8332/ai-jadonghwaneun-dolaganeunde-oneul-ibgeumi-0weoniramyeon-30le"
+    },
+    {
+      "id": "github_issue_1",
+      "channel": "GitHub Issue",
+      "url": "https://github.com/avenna01-ceo/claude-code-survival-kr/issues/1",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://github.com/avenna01-ceo/claude-code-survival-kr/issues/1"
+    },
+    {
+      "id": "github_issue_2",
+      "channel": "GitHub Issue",
+      "url": "https://github.com/avenna01-ceo/claude-code-survival-kr/issues/2",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://github.com/avenna01-ceo/claude-code-survival-kr/issues/2"
+    },
+    {
+      "id": "public_gist",
+      "channel": "GitHub Gist",
+      "url": "https://gist.github.com/avenna01-ceo/a6cfa46887eddf9a9efc9617d8146f6b",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://gist.github.com/avenna01-ceo/a6cfa46887eddf9a9efc9617d8146f6b"
+    },
+    {
+      "id": "seo_pages",
+      "channel": "GitHub Pages SEO",
+      "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/traffic-index.html",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://avenna01-ceo.github.io/claude-code-survival-kr/traffic-index.html"
+    }
+  ],
+  "devChecks": [
+    {
+      "id": "dev_en_article",
+      "status": 200,
+      "titlePresent": true,
+      "diagnosisLinkPresent": true,
+      "gumroadLinkPresent": true,
+      "reactions": null,
+      "comments": null
+    },
+    {
+      "id": "dev_kr_article",
+      "status": 200,
+      "titlePresent": true,
+      "diagnosisLinkPresent": true,
+      "gumroadLinkPresent": true,
+      "reactions": null,
+      "comments": null
+    }
+  ]
+}

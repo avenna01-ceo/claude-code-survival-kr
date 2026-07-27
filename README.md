@@ -1,5 +1,23 @@
 # Stop Your AI From Breaking Working Code
 
+## AI automations running, but revenue still 0?
+
+If Claude Code, Codex, and automation tools are active but today's deposit is still 0, the next bottleneck may be the offer, not the tool stack.
+
+Start with the free diagnosis:
+https://avenna01-ceo.github.io/claude-code-survival-kr/ai-revenue-diagnosis.html
+
+Traffic hub:
+https://avenna01-ceo.github.io/claude-code-survival-kr/traffic-index.html
+
+Break-even calculator:
+https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.html
+
+US$29 execution kit:
+https://gaiinmaster.gumroad.com/l/ai-automation-0won-escape-kit
+
+---
+
 > Rules and prompts that keep Claude Code, Cursor, and Codex from wrecking things that already worked.
 > Everything here is copy-paste. Explanations kept to a minimum.
 

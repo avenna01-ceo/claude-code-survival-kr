@@ -1,0 +1,56 @@
+[
+  {
+    "id": "dev_en_article",
+    "channel": "DEV",
+    "url": "https://dev.to/taehyeon_jeon_5618e0c8332/if-your-ai-automations-are-running-but-revenue-is-still-0-diagnose-the-offer-first-5fo1",
+    "funnel": "article -> diagnosis -> kit",
+    "status": "live",
+    "keep_if": "visible reactions/comments/bookmarks or referral sales within 24h",
+    "next_action": "Add a stronger top CTA if no engagement is visible"
+  },
+  {
+    "id": "dev_kr_article",
+    "channel": "DEV",
+    "url": "https://dev.to/taehyeon_jeon_5618e0c8332/ai-jadonghwaneun-dolaganeunde-oneul-ibgeumi-0weoniramyeon-30le",
+    "funnel": "Korean article -> diagnosis -> kit",
+    "status": "live",
+    "keep_if": "visible reactions/comments/bookmarks or referral sales within 24h",
+    "next_action": "If stronger than English, make Korean-first pages and copy"
+  },
+  {
+    "id": "github_issue_1",
+    "channel": "GitHub Issue",
+    "url": "https://github.com/avenna01-ceo/claude-code-survival-kr/issues/1",
+    "funnel": "issue -> diagnosis/calculator -> kit",
+    "status": "live",
+    "keep_if": "issue appears in search or gets interaction",
+    "next_action": "Add new comment with latest traffic hub"
+  },
+  {
+    "id": "github_issue_2",
+    "channel": "GitHub Issue",
+    "url": "https://github.com/avenna01-ceo/claude-code-survival-kr/issues/2",
+    "funnel": "issue -> DEV article -> diagnosis",
+    "status": "live",
+    "keep_if": "issue appears in search or gets interaction",
+    "next_action": "Add Korean article and traffic hub"
+  },
+  {
+    "id": "public_gist",
+    "channel": "GitHub Gist",
+    "url": "https://gist.github.com/avenna01-ceo/a6cfa46887eddf9a9efc9617d8146f6b",
+    "funnel": "gist -> diagnosis/calculator/articles -> kit",
+    "status": "live",
+    "keep_if": "indexed or discovered via GitHub search",
+    "next_action": "Keep updated with best-performing entry point"
+  },
+  {
+    "id": "seo_pages",
+    "channel": "GitHub Pages SEO",
+    "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/traffic-index.html",
+    "funnel": "long-tail page -> diagnosis/calculator -> kit",
+    "status": "live_indexnow_submitted",
+    "keep_if": "pages indexed or diagnosis traffic appears",
+    "next_action": "Expand only around keywords that show discovery"
+  }
+]
