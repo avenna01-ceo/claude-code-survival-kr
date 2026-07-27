@@ -133,5 +133,14 @@
     "status": "live_indexnow_submitted_primary_homepage_gumroad_updated",
     "keep_if": "first Gumroad sale or checkout visits appear",
     "next_action": "Make this the primary route and update Gumroad product copy"
+  },
+  {
+    "id": "free_n8n_lead_capture_workflow",
+    "channel": "GitHub Pages Free Workflow",
+    "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/free-n8n-ai-lead-capture-workflow.html",
+    "funnel": "free n8n workflow search -> JSON download -> US$9 first-sale pack",
+    "status": "created_for_indexnow_submission",
+    "keep_if": "page gets indexed, JSON downloads/referrals appear, or paid pack checkout visits rise",
+    "next_action": "Publish a DEV tutorial and update GitHub/Gist surfaces with the free workflow"
   }
 ]

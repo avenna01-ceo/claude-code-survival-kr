@@ -1,0 +1,107 @@
+{
+  "name": "Free AI Lead Capture and Score Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "ai-lead-capture",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "lead-webhook",
+      "name": "Lead Form Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {"id": "source", "name": "source", "value": "={{ $json.body.source || 'landing_page' }}", "type": "string"},
+            {"id": "pain", "name": "pain", "value": "={{ $json.body.pain || '' }}", "type": "string"},
+            {"id": "budget", "name": "budget", "value": "={{ Number($json.body.budget || 0) }}", "type": "number"},
+            {"id": "urgency", "name": "urgency", "value": "={{ $json.body.urgency || 'unknown' }}", "type": "string"}
+          ]
+        },
+        "options": {}
+      },
+      "id": "normalize-lead",
+      "name": "Normalize Lead Fields",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [480, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const pain = String($json.pain || '').toLowerCase();\nlet score = 0;\nif (pain.includes('0') || pain.includes('no sales') || pain.includes('zero revenue')) score += 35;\nif (pain.includes('tool') || pain.includes('subscription') || pain.includes('limit')) score += 20;\nif (Number($json.budget || 0) >= 9) score += 25;\nif (['today','now','48h','urgent'].includes(String($json.urgency || '').toLowerCase())) score += 20;\nreturn [{ json: { ...$json, score, segment: score >= 60 ? 'hot' : score >= 35 ? 'warm' : 'cold' } }];"
+      },
+      "id": "score-lead",
+      "name": "Score Lead",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [720, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {"caseSensitive": true, "leftValue": "", "typeValidation": "strict"},
+          "conditions": [
+            {
+              "id": "hot-lead",
+              "leftValue": "={{ $json.segment }}",
+              "rightValue": "hot",
+              "operator": {"type": "string", "operation": "equals"}
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "hot-lead-filter",
+      "name": "Hot Lead?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [960, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { status: 'hot', next_step: 'Send the paid offer reply now', offer_url: 'https://gaiinmaster.gumroad.com/l/ai-automation-0won-escape-kit' } }}",
+        "options": {}
+      },
+      "id": "hot-response",
+      "name": "Hot Lead Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1200, 220]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { status: $json.segment, next_step: 'Send proof or a lighter question before selling', offer_url: 'https://avenna01-ceo.github.io/claude-code-survival-kr/free-n8n-ai-lead-capture-workflow.html' } }}",
+        "options": {}
+      },
+      "id": "warm-cold-response",
+      "name": "Warm or Cold Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1200, 390]
+    }
+  ],
+  "connections": {
+    "Lead Form Webhook": {"main": [[{"node": "Normalize Lead Fields", "type": "main", "index": 0}]]},
+    "Normalize Lead Fields": {"main": [[{"node": "Score Lead", "type": "main", "index": 0}]]},
+    "Score Lead": {"main": [[{"node": "Hot Lead?", "type": "main", "index": 0}]]},
+    "Hot Lead?": {
+      "main": [
+        [{"node": "Hot Lead Response", "type": "main", "index": 0}],
+        [{"node": "Warm or Cold Response", "type": "main", "index": 0}]
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "description": "Free top-of-funnel workflow for scoring leads before sending a paid AI automation offer."
+  }
+}

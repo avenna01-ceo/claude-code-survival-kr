@@ -12,6 +12,9 @@ https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-launch-pric
 Market-researched template pack:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-first-sale-automation-template-pack.html
 
+Free n8n lead capture workflow:
+https://avenna01-ceo.github.io/claude-code-survival-kr/free-n8n-ai-lead-capture-workflow.html
+
 Autonomous AI agent, still $0 revenue:
 https://avenna01-ceo.github.io/claude-code-survival-kr/autonomous-ai-agent-zero-revenue.html
 
