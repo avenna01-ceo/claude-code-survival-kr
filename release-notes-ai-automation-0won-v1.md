@@ -27,6 +27,12 @@ It includes:
 
 No income guarantee. No custom implementation. Digital self-execution kit only.
 
+## Start here: free 60-second diagnosis
+
+Check whether the bottleneck is your automation or your offer:
+
+https://avenna01-ceo.github.io/claude-code-survival-kr/ai-revenue-diagnosis.html
+
 ## Free calculator
 
 Check how many US$29 sales are needed to recover this month's AI tool costs:
