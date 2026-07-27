@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-07-27T11:03:38.740Z",
+  "checkedAt": "2026-07-27T11:06:44.490Z",
   "checks": [
     {
       "id": "dev_en_article",
@@ -141,9 +141,17 @@
       "id": "sns_sales_formula_applied",
       "channel": "GitHub Pages Trust Builder",
       "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/sns-sales-formula-applied.html",
-      "ok": false,
-      "status": 404,
+      "ok": true,
+      "status": 200,
       "finalUrl": "https://avenna01-ceo.github.io/claude-code-survival-kr/sns-sales-formula-applied.html"
+    },
+    {
+      "id": "dev_sns_sales_formula",
+      "channel": "DEV",
+      "url": "https://dev.to/taehyeon_jeon_5618e0c8332/the-sns-sales-formula-i-applied-to-an-ai-automation-template-pack-2peo",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://dev.to/taehyeon_jeon_5618e0c8332/the-sns-sales-formula-i-applied-to-an-ai-automation-template-pack-2peo"
     }
   ],
   "devChecks": [
@@ -176,6 +184,15 @@
     },
     {
       "id": "dev_free_n8n_workflow",
+      "status": 200,
+      "titlePresent": true,
+      "diagnosisLinkPresent": false,
+      "gumroadLinkPresent": true,
+      "reactions": null,
+      "comments": null
+    },
+    {
+      "id": "dev_sns_sales_formula",
       "status": 200,
       "titlePresent": true,
       "diagnosisLinkPresent": false,
