@@ -88,5 +88,14 @@
     "status": "live_indexnow_submitted",
     "keep_if": "issue interest comment appears or $29 kit clicks increase",
     "next_action": "If interest appears, create actual $9 product; if not, discard"
+  },
+  {
+    "id": "autonomous_ai_agent_zero_revenue",
+    "channel": "GitHub Pages SEO",
+    "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/autonomous-ai-agent-zero-revenue.html",
+    "funnel": "AI agent zero revenue search -> diagnosis/30min offer -> kit",
+    "status": "live_pending_push",
+    "keep_if": "indexed, shared from DEV context, or direct kit clicks appear",
+    "next_action": "If it gets signal, write a DEV follow-up around agent output versus paid offer"
   }
 ]

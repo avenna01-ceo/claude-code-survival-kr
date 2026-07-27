@@ -6,6 +6,9 @@ If Claude Code, Codex, and automation tools are active but today's deposit is st
 Start with the 30-minute offer page:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-first-paid-offer-30min.html
 
+Autonomous AI agent, still $0 revenue:
+https://avenna01-ceo.github.io/claude-code-survival-kr/autonomous-ai-agent-zero-revenue.html
+
 Free diagnosis:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-revenue-diagnosis.html
 
