@@ -43,6 +43,10 @@ Direct JSON:
 
 https://avenna01-ceo.github.io/claude-code-survival-kr/free-workflows/n8n-ai-lead-capture-and-score.json
 
+DEV tutorial:
+
+https://dev.to/taehyeon_jeon_5618e0c8332/free-n8n-ai-lead-capture-workflow-score-leads-before-you-chase-them-49k
+
 ## Free 60-second diagnosis
 
 Check whether the bottleneck is your automation or your offer:

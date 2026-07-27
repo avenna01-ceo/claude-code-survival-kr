@@ -142,5 +142,14 @@
     "status": "created_for_indexnow_submission",
     "keep_if": "page gets indexed, JSON downloads/referrals appear, or paid pack checkout visits rise",
     "next_action": "Publish a DEV tutorial and update GitHub/Gist surfaces with the free workflow"
+  },
+  {
+    "id": "dev_free_n8n_workflow",
+    "channel": "DEV",
+    "url": "https://dev.to/taehyeon_jeon_5618e0c8332/free-n8n-ai-lead-capture-workflow-score-leads-before-you-chase-them-49k",
+    "funnel": "DEV tutorial -> free n8n workflow -> US$9 first-sale pack",
+    "status": "live",
+    "keep_if": "visible reactions/comments/bookmarks or referral visits to the free workflow page",
+    "next_action": "If DEV gets signal, edit the top paragraph with a stronger download CTA"
   }
 ]
