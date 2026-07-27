@@ -1,3 +1,7 @@
+**바로 실행 페이지:** 30분 안에 첫 유료 제안 구조를 만들고 싶다면 여기서 시작하세요.
+
+https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-first-paid-offer-30min.html?utm_source=devto&utm_medium=kr_article_direct_cta&utm_campaign=72h
+
 **먼저 여기서 확인하세요:** AI 툴값은 나가는데 오늘 입금이 0원이라면 60초 무료 진단부터 해보세요.
 
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-revenue-diagnosis.html?utm_source=devto&utm_medium=kr_article_top_cta&utm_campaign=72h

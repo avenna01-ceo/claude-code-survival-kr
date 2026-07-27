@@ -1,3 +1,7 @@
+**Direct execution page:** if you want to create the first paid offer structure in 30 minutes, start here.
+
+https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-first-paid-offer-30min.html?utm_source=devto&utm_medium=en_article_direct_cta&utm_campaign=72h
+
 **Start here:** I added a free 60-second diagnosis for builders stuck with AI tool costs and $0 revenue.
 
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-revenue-diagnosis.html?utm_source=devto&utm_medium=article_top_cta&utm_campaign=72h
