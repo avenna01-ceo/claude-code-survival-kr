@@ -70,5 +70,14 @@
     "status": "live_indexnow_submitted",
     "keep_if": "indexed or GitHub Pages traffic appears",
     "next_action": "If it works, create more comparison pages around AI tool limits"
+  },
+  {
+    "id": "first_paid_offer_30min",
+    "channel": "GitHub Pages Landing Variant",
+    "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-first-paid-offer-30min.html",
+    "funnel": "specific promise page -> gumroad/diagnosis -> kit",
+    "status": "live_indexnow_submitted",
+    "keep_if": "drives direct Gumroad clicks or gets indexed",
+    "next_action": "If it beats diagnosis framing, move it to primary homepage"
   }
 ]
