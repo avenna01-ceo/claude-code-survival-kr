@@ -1,0 +1,17 @@
+{
+  "name": "04 Objection to Reply Router",
+  "nodes": [
+    {"name": "New Reply", "type": "emailTrigger", "notes": "Trigger when a lead replies."},
+    {"name": "Classify Objection", "type": "openai", "notes": "Classify price, trust, time, technical, relevance, or other."},
+    {"name": "Pick Reply", "type": "switch", "notes": "Select matching reply bank section."},
+    {"name": "Draft Response", "type": "openai", "notes": "Personalize reply without overpromising."},
+    {"name": "Update CRM", "type": "googleSheets", "notes": "Save objection and next action."}
+  ],
+  "connections": [
+    ["New Reply", "Classify Objection"],
+    ["Classify Objection", "Pick Reply"],
+    ["Pick Reply", "Draft Response"],
+    ["Draft Response", "Update CRM"]
+  ],
+  "prompt": "Classify the objection and draft a truthful response. Do not guarantee revenue."
+}

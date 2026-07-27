@@ -1,0 +1,19 @@
+{
+  "name": "03 Three Day Follow Up Sequence",
+  "nodes": [
+    {"name": "Lead Added", "type": "googleSheetsTrigger", "notes": "Start when lead status is new."},
+    {"name": "Day 0 Reply", "type": "email", "notes": "Send useful answer and offer link."},
+    {"name": "Wait 1 Day", "type": "wait", "notes": "Pause before proof/example follow-up."},
+    {"name": "Day 1 Example", "type": "email", "notes": "Send one concrete example."},
+    {"name": "Wait 2 Days", "type": "wait", "notes": "Pause before final close."},
+    {"name": "Day 3 Final Close", "type": "email", "notes": "Low-pressure final message."}
+  ],
+  "connections": [
+    ["Lead Added", "Day 0 Reply"],
+    ["Day 0 Reply", "Wait 1 Day"],
+    ["Wait 1 Day", "Day 1 Example"],
+    ["Day 1 Example", "Wait 2 Days"],
+    ["Wait 2 Days", "Day 3 Final Close"]
+  ],
+  "rule": "Only follow up with people who opted in, asked a question, or clearly engaged. Do not cold-spam."
+}

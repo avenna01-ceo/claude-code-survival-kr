@@ -1,0 +1,17 @@
+{
+  "name": "05 Daily Sales Signal Digest",
+  "nodes": [
+    {"name": "Daily Cron", "type": "cron", "notes": "Run once per day."},
+    {"name": "Read Leads", "type": "googleSheets", "notes": "Count leads by source and status."},
+    {"name": "Read Sales", "type": "manualImport", "notes": "Paste sales count or connect payment data."},
+    {"name": "AI Diagnosis", "type": "openai", "notes": "Classify each channel as keep, change, or kill."},
+    {"name": "Email Digest", "type": "email", "notes": "Send one action for the next 24 hours."}
+  ],
+  "connections": [
+    ["Daily Cron", "Read Leads"],
+    ["Read Leads", "Read Sales"],
+    ["Read Sales", "AI Diagnosis"],
+    ["AI Diagnosis", "Email Digest"]
+  ],
+  "prompt": "Given views, clicks, replies, objections, and sales, choose one action: keep, change, or kill. Explain in one sentence."
+}

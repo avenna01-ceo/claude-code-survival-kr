@@ -1,0 +1,17 @@
+{
+  "name": "02 Inquiry to Paid Offer Reply",
+  "nodes": [
+    {"name": "New Inquiry", "type": "emailTrigger", "notes": "Trigger from email, form, or manual import."},
+    {"name": "Extract Pain", "type": "openai", "notes": "Summarize the buyer pain in one sentence."},
+    {"name": "Match Offer Angle", "type": "switch", "notes": "Route to tool-cost, no-sales, setup-help, or agency angle."},
+    {"name": "Draft Reply", "type": "openai", "notes": "Write a helpful reply with one CTA."},
+    {"name": "Human Approval", "type": "manual", "notes": "Review before sending. Do not spam."}
+  ],
+  "connections": [
+    ["New Inquiry", "Extract Pain"],
+    ["Extract Pain", "Match Offer Angle"],
+    ["Match Offer Angle", "Draft Reply"],
+    ["Draft Reply", "Human Approval"]
+  ],
+  "prompt": "Draft a concise reply. Give one useful observation, one next step, and one relevant paid offer link placeholder."
+}

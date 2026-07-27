@@ -9,6 +9,9 @@ https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-first-paid-
 Launch price direct page:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-launch-price-9.html
 
+Market-researched template pack:
+https://avenna01-ceo.github.io/claude-code-survival-kr/ai-first-sale-automation-template-pack.html
+
 Autonomous AI agent, still $0 revenue:
 https://avenna01-ceo.github.io/claude-code-survival-kr/autonomous-ai-agent-zero-revenue.html
 

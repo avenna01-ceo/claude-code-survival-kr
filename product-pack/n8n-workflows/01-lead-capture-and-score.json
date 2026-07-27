@@ -1,0 +1,17 @@
+{
+  "name": "01 Lead Capture and Score",
+  "nodes": [
+    {"name": "New Lead Webhook", "type": "webhook", "notes": "Receive form, DM, or inquiry data."},
+    {"name": "Normalize Lead", "type": "set", "notes": "Keep name, email, source, message, and offer."},
+    {"name": "AI Lead Score", "type": "openai", "notes": "Classify hot, warm, or cold. Tag pain point."},
+    {"name": "Save Lead", "type": "googleSheets", "notes": "Append lead and score to tracking sheet."},
+    {"name": "Notify Owner", "type": "email", "notes": "Send alert only for hot or warm leads."}
+  ],
+  "connections": [
+    ["New Lead Webhook", "Normalize Lead"],
+    ["Normalize Lead", "AI Lead Score"],
+    ["AI Lead Score", "Save Lead"],
+    ["AI Lead Score", "Notify Owner"]
+  ],
+  "prompt": "Score this lead for purchase intent. Return intent_score 1-5, pain_tag, and one recommended reply angle."
+}

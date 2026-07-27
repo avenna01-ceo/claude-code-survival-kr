@@ -124,5 +124,14 @@
     "status": "live_indexnow_submitted",
     "keep_if": "indexed or launch page clicks increase",
     "next_action": "If this query gets signal, publish a DEV follow-up on views versus paid offers"
+  },
+  {
+    "id": "first_sale_template_pack",
+    "channel": "GitHub Pages Landing Variant",
+    "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/ai-first-sale-automation-template-pack.html",
+    "funnel": "market-researched pack page -> Gumroad checkout",
+    "status": "live_pending_push",
+    "keep_if": "first Gumroad sale or checkout visits appear",
+    "next_action": "Make this the primary route and update Gumroad product copy"
   }
 ]
