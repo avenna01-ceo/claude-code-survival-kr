@@ -115,5 +115,27 @@ Rules are advisory. Hooks are enforcement. Use both: `CLAUDE.md` for *why*,
 
 ---
 
+## What this doesn't solve
+
+A hook can only stop things that end in a tool call. It can't stop the model from
+continuing after you told it to stop, or from reporting work as done that it never
+verified, or from confidently proposing the approach you already tried and abandoned.
+
+Those are the failures that actually cost you a week, and they need a different kind of
+fix — a rules file that carries *why*, a session boundary before the window rots, and a
+habit of asking for evidence instead of accepting "Done!".
+
+The [main README](../README.md) covers those. Free, and the useful half for most people.
+
+If you want the long version, there's a 25-page field manual —
+**[$19](https://gaiinmaster.gumroad.com/l/working-with-claude-code)** — with approval
+gates, kill switches, cost control, when *not* to build an autonomous loop, 7 copy-paste
+templates, and a chapter on not fooling yourself about results.
+
+Don't buy it if you already design your own hooks and subagents. You wrote this script
+yourself in your head while reading it.
+
+---
+
 Part of [claude-code-survival-kr](https://github.com/avenna01-ceo/claude-code-survival-kr) —
 rules and prompts that stop AI from breaking working code. MIT.
