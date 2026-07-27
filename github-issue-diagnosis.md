@@ -13,5 +13,5 @@ https://avenna01-ceo.github.io/claude-code-survival-kr/ai-revenue-diagnosis.html
 툴값 손익분기 계산기:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.html
 
-US$29 실행 키트:
+US$9 실행 키트:
 https://gaiinmaster.gumroad.com/l/ai-automation-0won-escape-kit

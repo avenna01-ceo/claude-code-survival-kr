@@ -5,4 +5,4 @@ https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.h
 
 Why this matters:
 
-People often say "AI automation is not making money", but they do not know the exact break-even number. The calculator turns tool cost into a concrete sales target, then points to the diagnosis and the $29 kit.
+People often say "AI automation is not making money", but they do not know the exact break-even number. The calculator turns tool cost into a concrete sales target, then points to the diagnosis and the $9 kit.

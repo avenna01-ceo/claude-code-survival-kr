@@ -106,7 +106,7 @@ function page(p) {
     <div class="actions">
       <a class="btn red" href="${diagnosis}?utm_source=${p.file}&utm_medium=cta&utm_campaign=72h">60초 무료 진단하기</a>
       <a class="btn" href="${calculator}?utm_source=${p.file}&utm_medium=cta&utm_campaign=72h">툴값 손익분기 계산</a>
-      <a class="btn yellow" href="${gumroad}?utm_source=${p.file}&utm_medium=cta&utm_campaign=72h">US$29 키트 보기</a>
+      <a class="btn yellow" href="${gumroad}?utm_source=${p.file}&utm_medium=cta&utm_campaign=72h">US$9 키트 보기</a>
     </div>
     <section class="panel">
       <h2>성과가 안 나는 핵심 원인</h2>

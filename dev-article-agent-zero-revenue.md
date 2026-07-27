@@ -52,7 +52,7 @@ https://avenna01-ceo.github.io/claude-code-survival-kr/ai-revenue-diagnosis.html
 
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-first-paid-offer-30min.html?utm_source=devto&utm_medium=followup_article&utm_campaign=72h
 
-There is also a $29 execution kit if you want the templates and checklist:
+There is also a $9 execution kit if you want the templates and checklist:
 
 https://gaiinmaster.gumroad.com/l/ai-automation-0won-escape-kit?utm_source=devto&utm_medium=followup_article&utm_campaign=72h
 

@@ -203,13 +203,13 @@ const foot = `  <footer class="wrap">
 
 const landing = `${head({
   title: "AI 자동화 0원 탈출 키트 | 툴값만 나가고 입금은 0원일 때",
-  description: "Claude Code 100/100%, Codex 주간 한도 대기, 오늘 입금 0원. AI 자동화 초보자가 $29로 첫 유료 제안을 검증하는 실행 키트.",
+  description: "Claude Code 100/100%, Codex 주간 한도 대기, 오늘 입금 0원. AI 자동화 초보자가 $9로 첫 유료 제안을 검증하는 실행 키트.",
   canonical: `${site}/ai-automation-0won-escape-kit.html`,
 })}
   <header class="top">
     <div class="wrap nav">
       <div class="brand">AI Automation 0 Won Escape Kit</div>
-      <a class="buy" href="${gumroad}">US$29로 받기</a>
+      <a class="buy" href="${gumroad}">US$9로 받기</a>
     </div>
   </header>
 
@@ -223,7 +223,7 @@ const landing = `${head({
           문제는 자동화가 아니라 <strong>사람이 돈을 내는 제안 구조</strong>일 가능성이 큽니다.
         </p>
         <div class="cta-row">
-          <a class="primary" href="${gumroad}">US$29로 실행 키트 받기</a>
+          <a class="primary" href="${gumroad}">US$9로 실행 키트 받기</a>
           <a class="secondary" href="${paypal}">PayPal로 결제하기</a>
         </div>
         <div class="note">비싼 강의나 대행을 사기 전에, 먼저 시장 반응을 확인하는 저가 실행 키트입니다.</div>
@@ -267,7 +267,7 @@ const landing = `${head({
             “이번 달도 툴값만 나가고 입금은 0원일지 모른다”는 압박입니다.
             이 키트는 더 배우기 전에 팔릴 제안부터 꺼내게 만듭니다.
           </p>
-          <a class="primary" href="${gumroad}">지금 US$29로 받기</a>
+          <a class="primary" href="${gumroad}">지금 US$9로 받기</a>
         </div>
       </div>
     </section>
@@ -284,7 +284,7 @@ const landing = `${head({
         </div>
         <div class="item">
           <h3>더 쓰기 전에</h3>
-          <p>구독료를 더 태우기 전에 $29짜리 작은 검증으로 방향을 확인합니다.</p>
+          <p>구독료를 더 태우기 전에 $9짜리 작은 검증으로 방향을 확인합니다.</p>
         </div>
       </div>
     </section>
@@ -318,7 +318,7 @@ const landing = `${head({
       </div>
       <div class="price">
         <div>Self-execution kit</div>
-        <div class="amount">US$29</div>
+        <div class="amount">US$9</div>
         <p>한 번 더 비싼 툴을 결제하기 전에, 먼저 고객 반응을 확인하세요.</p>
         <a class="primary" href="${gumroad}">Gumroad에서 받기</a>
       </div>
@@ -338,7 +338,7 @@ const root = `${head({
       <p class="lead">AI 자동화로 수익을 만들고 싶지만 오늘 입금이 0원이라면, 더 만들기 전에 팔릴 제안부터 확인해야 합니다.</p>
       <div class="cta-row">
         <a class="primary" href="./ai-automation-0won-escape-kit.html">판매 페이지 보기</a>
-        <a class="secondary" href="${gumroad}">US$29로 받기</a>
+        <a class="secondary" href="${gumroad}">US$9로 받기</a>
       </div>
     </div>
     <aside class="dashboard">
@@ -352,7 +352,7 @@ ${foot}`;
 
 function articlePage({ file, title, description, h1, lead, rows }) {
   return `${head({ title, description, canonical: `${site}/${file}` })}
-  <header class="top"><div class="wrap nav"><div class="brand">AI Automation 0 Won Escape Kit</div><a class="buy" href="${gumroad}">US$29로 받기</a></div></header>
+  <header class="top"><div class="wrap nav"><div class="brand">AI Automation 0 Won Escape Kit</div><a class="buy" href="${gumroad}">US$9로 받기</a></div></header>
   <main>
     <section class="wrap hero">
       <div>
@@ -371,7 +371,7 @@ function articlePage({ file, title, description, h1, lead, rows }) {
       <div class="item"><h3>원인</h3><p>구매자가 얻는 결과보다 만든 도구 설명이 앞서면 초보자 시장에서는 바로 이탈합니다.</p></div>
       <div class="item"><h3>처방</h3><p>작은 가격, 명확한 결과, 바로 실행할 수 있는 결제 흐름으로 먼저 검증합니다.</p></div>
     </div></section>
-    <section class="wrap section split"><div><h2>더 큰 자동화 전에 작은 결제 검증부터</h2><p>이 키트는 완성된 대행 상품이 아니라, 지금 가진 AI 도구로 첫 유료 제안을 꺼내는 구조입니다. 실패해도 손실이 작고, 반응이 오면 다음 고가 서비스로 확장할 수 있습니다.</p></div><div class="price"><div>Validation kit</div><div class="amount">US$29</div><p>구독료를 한 번 더 결제하기 전에 고객 반응을 확인하세요.</p><a class="primary" href="${gumroad}">Gumroad에서 받기</a></div></section>
+    <section class="wrap section split"><div><h2>더 큰 자동화 전에 작은 결제 검증부터</h2><p>이 키트는 완성된 대행 상품이 아니라, 지금 가진 AI 도구로 첫 유료 제안을 꺼내는 구조입니다. 실패해도 손실이 작고, 반응이 오면 다음 고가 서비스로 확장할 수 있습니다.</p></div><div class="price"><div>Validation kit</div><div class="amount">US$9</div><p>구독료를 한 번 더 결제하기 전에 고객 반응을 확인하세요.</p><a class="primary" href="${gumroad}">Gumroad에서 받기</a></div></section>
   </main>
 ${foot}`;
 }
@@ -420,7 +420,7 @@ writeFileSync("share-posts.md", `# Share Posts
 ## YouTube Shorts / TikTok caption
 AI 자동화로 돈 벌려고 시작했는데 오늘 입금 0원, Claude Code 100/100%, Codex 리셋 대기만 보고 있다면 문제는 자동화가 아니라 제안일 수 있습니다.
 
-더 비싼 툴 결제하기 전에 $29로 첫 유료 제안부터 검증하세요.
+더 비싼 툴 결제하기 전에 $9로 첫 유료 제안부터 검증하세요.
 ${site}/ai-automation-0won-escape-kit.html
 
 #AI자동화 #수익화 #ClaudeCode #Codex #자동화
@@ -436,7 +436,7 @@ AI 자동화로 수익을 만들려고 하다가 툴 구독료만 늘고 입금�
 
 고가 대행이나 강의가 아니라, 먼저 팔릴 제안을 검증하는 구성입니다. 랜딩 카피, 결제 흐름, 후킹 문구, DM/이메일 문구, 반박 대응, 체크리스트가 들어 있습니다.
 
-가격은 US$29로 낮췄습니다. 비싼 툴을 한 번 더 결제하기 전에 작은 검증부터 하자는 방향입니다.
+가격은 US$9로 낮췄습니다. 비싼 툴을 한 번 더 결제하기 전에 작은 검증부터 하자는 방향입니다.
 
 ${site}/ai-automation-0won-escape-kit.html
 `, "utf8");

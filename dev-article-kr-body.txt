@@ -40,13 +40,13 @@ https://avenna01-ceo.github.io/claude-code-survival-kr/ai-revenue-diagnosis.html
 
 ## 툴값 손익분기 계산기
 
-이번 달 AI 툴값을 회수하려면 $29 상품을 몇 개 팔아야 하는지도 계산할 수 있습니다.
+이번 달 AI 툴값을 회수하려면 $9 상품을 몇 개 팔아야 하는지도 계산할 수 있습니다.
 
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.html?utm_source=devto&utm_medium=kr_article&utm_campaign=72h
 
 ## 유료 키트
 
-진단 후 바로 실행할 수 있는 $29 키트도 만들었습니다.
+진단 후 바로 실행할 수 있는 $9 키트도 만들었습니다.
 
 랜딩 카피, 결제 흐름, 후킹 문구, DM/이메일 문구, 가격 반박 대응, 체크리스트가 들어 있습니다.
 

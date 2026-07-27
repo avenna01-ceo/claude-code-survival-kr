@@ -19,7 +19,7 @@ https://avenna01-ceo.github.io/claude-code-survival-kr/traffic-index.html
 Break-even calculator:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.html
 
-US$29 execution kit:
+US$9 execution kit:
 https://gaiinmaster.gumroad.com/l/ai-automation-0won-escape-kit
 
 ---

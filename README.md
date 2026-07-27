@@ -18,7 +18,7 @@ https://dev.to/taehyeon_jeon_5618e0c8332/autonomous-ai-agent-running-still-0-rev
 Break-even calculator:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.html
 
-US$29 execution kit:
+US$9 execution kit:
 https://gaiinmaster.gumroad.com/l/ai-automation-0won-escape-kit
 
 ---
@@ -233,7 +233,7 @@ If Claude Code limits are full, Codex is waiting for reset, automations are runn
 and the payment notification is still silent, the bottleneck may not be automation.
 It may be the offer.
 
-**Get the $29 AI Automation 0 Won Escape Kit:**
+**Get the $9 AI Automation 0 Won Escape Kit:**
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-0won-escape-kit.html
 
 **Free AI tool cost calculator:**

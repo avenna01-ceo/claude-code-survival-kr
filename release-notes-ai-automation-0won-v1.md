@@ -14,7 +14,7 @@ The bottleneck may not be automation. It may be the offer.
 
 ## What this is
 
-A US$29 self-execution kit for validating one AI automation offer before buying another tool, course, or expensive service.
+A US$9 self-execution kit for validating one AI automation offer before buying another tool, course, or expensive service.
 
 It includes:
 
@@ -51,7 +51,7 @@ https://gist.github.com/avenna01-ceo/a6cfa46887eddf9a9efc9617d8146f6b
 
 ## Free calculator
 
-Check how many US$29 sales are needed to recover this month's AI tool costs:
+Check how many US$9 sales are needed to recover this month's AI tool costs:
 
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.html
 

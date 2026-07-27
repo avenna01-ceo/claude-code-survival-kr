@@ -14,7 +14,7 @@ The bottleneck may not be automation. It may be the offer.
 
 ## What this is
 
-A US$29 self-execution kit for validating one AI automation offer before buying another tool, course, or expensive service.
+A US$9 self-execution kit for validating one AI automation offer before buying another tool, course, or expensive service.
 
 It includes:
 

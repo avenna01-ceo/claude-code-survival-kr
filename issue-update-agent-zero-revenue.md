@@ -10,4 +10,4 @@ Why this exists:
 - They need the sharper diagnosis: the agent is output, but the paid offer is the bottleneck.
 
 Next tracked route:
-agent-zero-revenue page -> free diagnosis or 30-minute first paid offer -> $29 execution kit
+agent-zero-revenue page -> free diagnosis or 30-minute first paid offer -> $9 execution kit

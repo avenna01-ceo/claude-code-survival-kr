@@ -31,5 +31,5 @@ https://dev.to/taehyeon_jeon_5618e0c8332/autonomous-ai-agent-running-still-0-rev
 Korean DEV article:
 https://dev.to/taehyeon_jeon_5618e0c8332/ai-jadonghwaneun-dolaganeunde-oneul-ibgeumi-0weoniramyeon-30le
 
-US$29 execution kit:
+US$9 execution kit:
 https://gaiinmaster.gumroad.com/l/ai-automation-0won-escape-kit?utm_source=gist&utm_medium=public&utm_campaign=72h
