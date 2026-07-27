@@ -4,6 +4,9 @@ If AI tool subscriptions keep charging but revenue is still zero, the next step 
 
 It may be offer diagnosis.
 
+US$9 launch price direct page:
+https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-launch-price-9.html?utm_source=gist&utm_medium=public_top&utm_campaign=72h
+
 Free 60-second diagnosis:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-revenue-diagnosis.html?utm_source=gist&utm_medium=public&utm_campaign=72h
 
