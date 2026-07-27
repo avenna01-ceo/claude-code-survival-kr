@@ -7,6 +7,12 @@ It may be offer diagnosis.
 Free 60-second diagnosis:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-revenue-diagnosis.html?utm_source=gist&utm_medium=public&utm_campaign=72h
 
+Autonomous AI agent, still $0 revenue:
+https://avenna01-ceo.github.io/claude-code-survival-kr/autonomous-ai-agent-zero-revenue.html?utm_source=gist&utm_medium=public&utm_campaign=72h
+
+Build the first paid offer in 30 minutes:
+https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-first-paid-offer-30min.html?utm_source=gist&utm_medium=public&utm_campaign=72h
+
 Traffic hub:
 https://avenna01-ceo.github.io/claude-code-survival-kr/traffic-index.html?utm_source=gist&utm_medium=public&utm_campaign=72h
 
