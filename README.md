@@ -1,14 +1,13 @@
 # Stop Your AI From Breaking Working Code
+## Build your first paid AI automation offer in 30 minutes
 
-## AI automations running, but revenue still 0?
+If Claude Code, Codex, and automation tools are active but today's deposit is still 0, do not add another workflow first. Create a small paid offer and test whether anyone will pay.
 
-If Claude Code, Codex, and automation tools are active but today's deposit is still 0, the next bottleneck may be the offer, not the tool stack.
+Start with the 30-minute offer page:
+https://avenna01-ceo.github.io/claude-code-survival-kr/ai-automation-first-paid-offer-30min.html
 
-Start with the free diagnosis:
+Free diagnosis:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-revenue-diagnosis.html
-
-Traffic hub:
-https://avenna01-ceo.github.io/claude-code-survival-kr/traffic-index.html
 
 Break-even calculator:
 https://avenna01-ceo.github.io/claude-code-survival-kr/ai-tool-cost-calculator.html
