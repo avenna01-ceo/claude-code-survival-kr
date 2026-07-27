@@ -178,5 +178,14 @@
     "status": "live",
     "keep_if": "gist appears in GitHub search or gets copied/shared",
     "next_action": "Use this Gist URL in community-safe n8n posts"
+  },
+  {
+    "id": "kr_first_sale_template_pack",
+    "channel": "GitHub Pages Korean Landing",
+    "url": "https://avenna01-ceo.github.io/claude-code-survival-kr/ai-first-sale-automation-template-pack-kr.html",
+    "funnel": "Korean pain-aware buyer -> free n8n bridge or Gumroad checkout",
+    "status": "created_for_indexnow_submission",
+    "keep_if": "Korean DEV/Gist/GitHub surfaces send clicks or checkout visits rise",
+    "next_action": "Use as primary Korean CTA and update Korean public surfaces"
   }
 ]
