@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-07-27T11:17:46.142Z",
+  "checkedAt": "2026-07-27T11:22:58.159Z",
   "checks": [
     {
       "id": "dev_en_article",
@@ -152,6 +152,14 @@
       "ok": true,
       "status": 200,
       "finalUrl": "https://dev.to/taehyeon_jeon_5618e0c8332/the-sns-sales-formula-i-applied-to-an-ai-automation-template-pack-2peo"
+    },
+    {
+      "id": "free_n8n_workflow_standalone_gist",
+      "channel": "GitHub Gist",
+      "url": "https://gist.github.com/avenna01-ceo/0fab852c3ede3609778dc0631bc04ca9",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://gist.github.com/avenna01-ceo/0fab852c3ede3609778dc0631bc04ca9"
     }
   ],
   "devChecks": [

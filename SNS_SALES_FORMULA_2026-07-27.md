@@ -63,6 +63,7 @@ Application:
 - DEV: use for long-form/tutorial trust.
 - GitHub Issues/Gist/Release: use as owned public proof surfaces.
 - n8n Creator Hub: requires Creator login; prepared submission package.
+- n8n Community Tutorials: requires login; prepared a free workflow tutorial post that leads with value, not a paid pitch.
 - X/LinkedIn/Reddit/OKKY: use prepared posts only where account/community fit is confirmed. Avoid drive-by spam.
 
 ## Decision rule for next actions
