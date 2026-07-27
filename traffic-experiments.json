@@ -12,10 +12,10 @@
     "id": "dev_kr_article",
     "channel": "DEV",
     "url": "https://dev.to/taehyeon_jeon_5618e0c8332/ai-jadonghwaneun-dolaganeunde-oneul-ibgeumi-0weoniramyeon-30le",
-    "funnel": "Korean article -> diagnosis -> kit",
-    "status": "live",
+    "funnel": "Korean article -> Korean landing/free n8n bridge -> Gumroad checkout",
+    "status": "live_updated_with_kr_landing_cta",
     "keep_if": "visible reactions/comments/bookmarks or referral sales within 24h",
-    "next_action": "If stronger than English, make Korean-first pages and copy"
+    "next_action": "If Korean page gets signal, make it the primary Korean public CTA"
   },
   {
     "id": "dev_agent_zero_revenue",

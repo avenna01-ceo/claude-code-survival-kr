@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-07-27T11:50:12.332Z",
+  "checkedAt": "2026-07-27T12:18:23.665Z",
   "checks": [
     {
       "id": "dev_en_article",
@@ -184,7 +184,7 @@
       "id": "dev_kr_article",
       "status": 200,
       "titlePresent": true,
-      "diagnosisLinkPresent": true,
+      "diagnosisLinkPresent": false,
       "gumroadLinkPresent": true,
       "reactions": null,
       "comments": null
