@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>문의 이탈 방지 예약 파이프라인 데모</title>
+  <meta name="description" content="예약 문의를 분류하고 응대 초안과 후속 추적표로 연결하는 48시간 세팅 데모입니다.">
+  <link rel="canonical" href="https://avenna01-ceo.github.io/claude-code-survival-kr/reservation-lead-demo.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="문의 이탈 방지 예약 파이프라인 데모">
+  <meta property="og:description" content="댓글, DM, 카톡에 흩어진 예약 문의를 응대 초안과 후속 추적표로 정리합니다.">
+  <meta property="og:url" content="https://avenna01-ceo.github.io/claude-code-survival-kr/reservation-lead-demo.html">
+  <style>
+    :root{--ink:#172033;--muted:#617084;--line:#d7dee8;--bg:#f5f7fb;--panel:#fff;--teal:#00a3a3;--coral:#ef6f5e;--yellow:#f4b740;--green:#168a5b;--shadow:0 18px 50px rgba(23,32,51,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Noto Sans KR","Malgun Gothic",sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}.topbar{position:sticky;top:0;z-index:3;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:13px clamp(18px,5vw,72px);border-bottom:1px solid var(--line);background:rgba(255,255,255,.94);backdrop-filter:blur(10px)}.brand,.price{font-weight:900}.price{color:var(--teal)}.hero{display:grid;grid-template-columns:minmax(0,.9fr) minmax(360px,1.1fr);gap:clamp(24px,5vw,54px);align-items:center;min-height:calc(100vh - 54px);padding:clamp(22px,4vw,52px) clamp(16px,5vw,72px)}h1{margin:0 0 18px;font-size:clamp(40px,5vw,68px);line-height:1.05;letter-spacing:0}.lead{margin:0 0 22px;color:#354052;font-size:clamp(18px,2vw,23px);font-weight:650}.badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}.badge{padding:7px 10px;border-radius:999px;background:#e8fbfb;color:#006b6f;font-size:13px;font-weight:900}.badge.hot{background:#fff1ee;color:#a33a2d}.cta{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:14px 20px;border-radius:8px;background:var(--teal);color:#fff;font-weight:900;text-decoration:none;box-shadow:0 12px 28px rgba(0,163,163,.22)}.note{margin-top:12px;color:var(--muted);font-size:14px}.demo{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:14px;border:1px solid var(--line);border-radius:8px;background:var(--panel);box-shadow:var(--shadow)}.pane{min-height:300px;border:1px solid var(--line);border-radius:8px;background:#fff;overflow:hidden}.pane h2{margin:0;padding:13px 15px;border-bottom:1px solid var(--line);font-size:15px;background:#f8fafc}.chat,.flow{padding:14px}.bubble{max-width:92%;margin-bottom:10px;padding:11px 12px;border-radius:8px;background:#f1f5f9;font-size:14px}.bubble.owner{margin-left:auto;background:#e8fbfb;border:1px solid rgba(0,163,163,.24)}.label{display:inline-flex;margin:0 6px 8px 0;padding:5px 8px;border-radius:999px;background:#f4f6f8;color:var(--muted);font-size:12px;font-weight:800}.label.hot{background:#fff1ee;color:#a33a2d}.label.green{background:#eaf8f0;color:var(--green)}.step{display:grid;grid-template-columns:26px 1fr;gap:10px;margin-bottom:12px;padding:12px;border:1px solid var(--line);border-radius:8px}.num{display:grid;place-items:center;width:26px;height:26px;border-radius:999px;background:var(--yellow);font-weight:900}.step strong{display:block;margin-bottom:3px}.step span{color:var(--muted);font-size:13px}.tablePane{grid-column:1/-1}table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#f8fafc;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 clamp(16px,5vw,72px) 40px}.card{padding:18px;border:1px solid var(--line);border-radius:8px;background:#fff}.card strong{display:block;margin-bottom:8px;font-size:18px}.card span{color:var(--muted)}@media(max-width:940px){.hero,.demo,.cards{grid-template-columns:1fr}.hero{min-height:auto}}@media(max-width:540px){.topbar{display:block}.price{margin-top:4px}.cta{width:100%}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">문의 이탈 방지 예약 파이프라인</div>
+    <div class="price">48시간 세팅 · 파일럿 110만원</div>
+  </header>
+  <main>
+    <section class="hero">
+      <div>
+        <div class="badges"><span class="badge hot">72시간 파일럿 3곳만</span><span class="badge">계정 비밀번호 미수집</span><span class="badge">대량 발송 없음</span></div>
+        <h1>문의는 오는데 예약으로 못 이어지는 매장을 48시간 안에 정리합니다.</h1>
+        <p class="lead">댓글, DM, 카톡, 문자에 흩어진 문의를 유형별로 분류하고, 매장 말투의 응대 초안과 예약 후속 메시지를 붙여 운영자가 놓칠 리드를 줄입니다.</p>
+        <a class="cta" href="#demo">3분 데모 보기</a>
+        <p class="note">완제품 SaaS가 아니라, 결제 후 바로 납품 가능한 운영 세팅입니다. 무리한 수익 보장 대신 응대 속도와 추적 가능성을 개선합니다.</p>
+      </div>
+      <div class="demo" id="demo">
+        <div class="pane">
+          <h2>고객 문의</h2>
+          <div class="chat">
+            <div class="bubble">안녕하세요. 이번 주 토요일 피부관리 예약 가능할까요? 가격이랑 위치도 궁금해요.</div>
+            <div class="bubble owner">가능 시간 먼저 확인해드릴게요. 원하시는 시간대가 오전/오후 중 어디에 가까우세요?</div>
+            <span class="label hot">예약 의도 높음</span><span class="label">가격 문의</span><span class="label green">후속 필요</span>
+          </div>
+        </div>
+        <div class="pane">
+          <h2>자동 처리 흐름</h2>
+          <div class="flow">
+            <div class="step"><div class="num">1</div><div><strong>문의 유형 분류</strong><span>예약, 가격, 위치, 시술/서비스 질문을 자동 태깅</span></div></div>
+            <div class="step"><div class="num">2</div><div><strong>매장 말투 응대 초안</strong><span>딱딱한 챗봇 말투가 아니라 기존 리뷰/공지 톤 반영</span></div></div>
+            <div class="step"><div class="num">3</div><div><strong>운영자 알림</strong><span>예약 가능성이 높은 문의만 우선 알림</span></div></div>
+            <div class="step"><div class="num">4</div><div><strong>후속 추적</strong><span>답장 없음, 예약 확정, 재문의 상태 기록</span></div></div>
+          </div>
+        </div>
+        <div class="pane tablePane">
+          <h2>리드 추적표 예시</h2>
+          <table>
+            <thead><tr><th>유입</th><th>문의</th><th>점수</th><th>다음 행동</th><th>상태</th></tr></thead>
+            <tbody>
+              <tr><td>Instagram DM</td><td>토요일 예약/가격/위치</td><td>5</td><td>가능 시간 2개 제안</td><td>응답 대기</td></tr>
+              <tr><td>네이버 톡톡</td><td>첫 방문 할인 문의</td><td>4</td><td>패키지 안내 후 예약 링크</td><td>후속 필요</td></tr>
+              <tr><td>댓글</td><td>주차 가능 여부</td><td>3</td><td>위치/주차 안내 후 DM 유도</td><td>처리 완료</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="cards">
+      <article class="card"><strong>납품 48시간</strong><span>문서/리뷰/공지 5~20개를 받아 응대 템플릿과 추적표를 이식합니다.</span></article>
+      <article class="card"><strong>파일럿 110만원</strong><span>3건 결제 시 330만원 매출 구조. 실제 입금 기준으로만 성과 계산합니다.</span></article>
+      <article class="card"><strong>정책 안전형</strong><span>대량 스팸, 계정 탈취, 무제한 자동발송 없이 초안 작성과 추적에만 자동화를 씁니다.</span></article>
+    </section>
+  </main>
+</body>
+</html>
