@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>예약 문의 놓치지 않는 10분 점검표</title>
+  <title>예약 문의 놓치지 않는 10분 자가진단</title>
   <style>
-    :root{--ink:#172033;--muted:#5f6b7a;--line:#d8e0ea;--bg:#f5f7fb;--white:#fff;--blue:#2458d3;--green:#11785f}
+    :root{--ink:#172033;--muted:#5f6b7a;--line:#d8e0ea;--bg:#f5f7fb;--white:#fff;--blue:#2458d3;--amber:#a35d00}
     *{box-sizing:border-box}
     body{margin:0;font-family:Arial,"Noto Sans KR",sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
     header{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);gap:28px;align-items:center;padding:38px clamp(18px,5vw,76px) 26px;background:var(--white);border-bottom:1px solid var(--line)}
@@ -24,6 +24,8 @@
     table{width:100%;border-collapse:collapse;font-size:14px}
     th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
     th{color:var(--muted);background:#f8fafc}
+    code{padding:2px 5px;border-radius:5px;background:#eef2f8;color:#22314a}
+    .note{color:var(--amber);font-weight:700}
     footer{padding:20px clamp(18px,5vw,76px) 36px;color:var(--muted)}
     @media(max-width:900px){header{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
   </style>
@@ -31,10 +33,10 @@
 <body>
   <header>
     <div>
-      <h1>예약 문의 놓치지 않는 10분 점검표</h1>
-      <p class="lede">카카오, 네이버 톡톡, 인스타 DM, 전화 문의가 섞일 때 오늘 들어온 문의 5개만 분류해서 예약 가능성이 높은 고객부터 답장할 수 있게 만드는 무료 자료입니다.</p>
+      <h1>예약 문의 놓치지 않는 10분 자가진단</h1>
+      <p class="lede">카카오, 네이버 톡톡, 인스타 DM, 전화 문의가 흩어져 있다면 오늘 들어온 문의 5개만 분류해도 먼저 답해야 할 고객이 보입니다.</p>
       <div class="actions">
-        <a class="button" href="booking-inquiry-checklist-freebie.html">무료 점검표 열기</a>
+        <a class="button" href="booking-inquiry-checklist-freebie.html">무료 자료 열기</a>
         <a class="button secondary" href="reservation-lead-demo.html">3분 데모 보기</a>
       </div>
     </div>
@@ -44,9 +46,9 @@
     <section>
       <h2>자료 안에 들어있는 것</h2>
       <div class="grid">
-        <div class="item"><strong>문의 유형 8개</strong><span>예약 시간, 가격, 위치, 상품 선택, 변경/취소 등을 빠르게 분류합니다.</span></div>
-        <div class="item"><strong>예약 가능성 점수표</strong><span>점수 4~5 문의를 먼저 답장해서 놓치는 예약을 줄입니다.</span></div>
-        <div class="item"><strong>답장 초안과 후속표</strong><span>2시간 후속, 다음날 후속, 가격 문의 답장을 바로 복사해 씁니다.</span></div>
+        <div class="item"><strong>문의 유형 8개</strong><span>예약 시간, 가격, 위치, 상품 선택, 변경/취소 같은 반복 문의를 빠르게 분류합니다.</span></div>
+        <div class="item"><strong>예약 가능성 점수</strong><span>점수 4~5 문의를 먼저 응답해서 놓치는 예약을 줄입니다.</span></div>
+        <div class="item"><strong>응답 초안과 후속</strong><span>2시간 후속, 다음날 후속, 가격 문의 응답을 바로 복사해 씁니다.</span></div>
       </div>
     </section>
     <section>
@@ -56,23 +58,24 @@
         <tbody>
           <tr><td>1</td><td>최근 문의 5개를 모읍니다.</td><td>2분</td></tr>
           <tr><td>2</td><td>각 문의에 A1~A8 유형과 1~5점 점수를 붙입니다.</td><td>4분</td></tr>
-          <tr><td>3</td><td>점수 4~5 문의부터 답장 초안을 수정해서 보냅니다.</td><td>4분</td></tr>
+          <tr><td>3</td><td>점수 4~5 문의부터 응답 초안을 수정해서 보냅니다.</td><td>4분</td></tr>
         </tbody>
       </table>
     </section>
     <section>
-      <h2>48시간 세팅이 필요한 경우</h2>
-      <p>문의 채널이 2개 이상이고, 답장이 늦어 예약 전환이 빠지는 느낌이 있다면 48시간 안에 문의 분류표, 매장 말투 응대 초안, 후속 메시지, 리드 추적표를 붙이는 파일럿 세팅이 가능합니다.</p>
-      <p><strong>파일럿가:</strong> 1,100,000원. PayPal 결제 링크로 진행하며, 결제 후 자료 요청 양식을 보내드립니다.</p>
-      <p>상세 자료를 이메일로 받고 싶다면 인스타 DM에 이메일 주소와 함께 <strong>상세자료</strong>라고 남겨주세요. 실제 폼 링크가 준비되면 이 버튼은 이메일 수집 폼으로 교체됩니다.</p>
+      <h2>복사용 템플릿까지 받고 싶다면</h2>
+      <p>인스타그램 게시물에 <code>문의</code>라고 댓글을 남기거나 DM으로 이메일 주소를 보내주세요. 자세한 복사용 응답 템플릿과 적용 예시를 이메일로 보내드립니다.</p>
+      <p>문의 채널이 2개 이상이고 응답이 밀린다면, 48시간 안에 문의 분류표, 매장 말투 응답 초안, 후속 메시지, 리드 추적표를 붙이는 1회성 세팅도 가능합니다.</p>
+      <p><strong>세팅가:</strong> 1,100,000원. PayPal 결제 링크로 진행하며, 결제 후 자료 요청 양식을 보내드립니다.</p>
+      <p class="note">대량 DM이나 무단 자동화는 하지 않습니다. 요청한 분에게만 자료를 보내고 실제 성과만 기록합니다.</p>
       <div class="actions">
-        <a class="button" href="booking-inquiry-checklist-freebie.html">무료 점검표 보기</a>
+        <a class="button" href="booking-inquiry-checklist-freebie.html">무료 자료 보기</a>
         <a class="button secondary" href="reservation-lead-demo.html">데모 보기</a>
       </div>
     </section>
   </main>
   <footer>
-    무작위 DM이나 대량 발송 자동화를 권하지 않습니다. 사용자가 댓글/DM으로 요청한 경우에만 자료를 보내고, 실제 성과 수치만 기록합니다.
+    운영 기록: 이메일을 실제로 받은 뒤에만 기록하고 후속 CTA를 보냅니다.
   </footer>
 </body>
 </html>
